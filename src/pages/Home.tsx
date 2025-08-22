@@ -18,24 +18,24 @@ import HeroCarousel from '../components/home/HeroCarousel';
 import StatsSection from '../components/home/StatsSection';
 import TestimonialsSection from '../components/home/TestimonialsSection';
 
-import preschoolImg from '../public/images/hero/stud9.jpg';
-import primaryImg from '../public/images/hero/stud1.jpg';
-import jhsImg from '../public/images/hero/stud5.jpg';
+// import preschoolImg from '/public/images/hero/stud9.jpg';
+// import primaryImg from '../public/images/hero/stud1.jpg';
+// import jhsImg from '../public/images/hero/stud5.jpg';
 
 
-import feature1Img from '../public/images/hero/ss11.jpg';
-import feature2Img from '../public/images/hero/ss1.jpg';
-import feature3Img from '../public/images/hero/ss13.jpg';
+// import feature1Img from '../public/images/hero/ss11.jpg';
+// import feature2Img from '../public/images/hero/ss1.jpg';
+// import feature3Img from '../public/images/hero/ss13.jpg';
 
-import schoolCommunityImg from '../public/images/hero/stud10.jpg';
-import happyChildrenImg from '../public/images/hero/stud7.jpg';
+// import schoolCommunityImg from '../public/images/hero/stud10.jpg';
+// import happyChildrenImg from '../public/images/hero/stud7.jpg';
 
-import gallery1 from '../public/images/hero/stud12.jpg';
-import gallery2 from '../public/images/hero/stud3.jpg';
-import gallery3 from '../public/images/hero/stud8.jpg';
-import gallery4 from '../public/images/hero/stud13.jpg';
-import gallery5 from '../public/images/hero/stud9.jpg';
-import gallery6 from '../public/images/hero/stud11.jpg';
+// import gallery1 from './images/hero/stud12.jpg';
+// import gallery2 from '../public/images/hero/stud3.jpg';
+// import gallery3 from '../public/images/hero/stud8.jpg';
+// import gallery4 from '../public/images/hero/stud13.jpg';
+// import gallery5 from '../public/images/hero/stud9.jpg';
+// import gallery6 from '../public/images/hero/stud11.jpg';
 
 
 const Home = () => {
@@ -51,7 +51,7 @@ const Home = () => {
       color: 'from-pink-400 to-pink-300',
       hoverColor: 'hover:from-pink-500 hover:to-pink-400',
       bgColor: 'bg-gradient-to-br from-pink-100 to-pink-200',
-      image: preschoolImg
+      image: '/images/hero/stud9.JPG'
     },
     {
       icon: FiBook,
@@ -60,7 +60,7 @@ const Home = () => {
       color: 'from-blue-400 to-blue-300',
       hoverColor: 'hover:from-blue-500 hover:to-blue-400',
       bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
-      image: primaryImg
+      image: '/images/hero/ss1.JPG'
     },
     {
       icon: FiAward,
@@ -69,17 +69,17 @@ const Home = () => {
        color: 'from-orange-400 to-orange-300',
      hoverColor: 'hover:from-orange-500 hover:to-orange-400',
      bgColor: 'bg-gradient-to-br from-orange-100 to-orange-200',
-      image: jhsImg
+      image: '/images/hero/stud5.JPG'
     },
   ];
 
   const galleryImages = [
-    gallery1,
-    gallery2,
-    gallery3,
-    gallery4,
-    gallery5,
-    gallery6
+    '/images/hero/stud12.JPG',
+    '/images/hero/stud3.JPG',
+    '/images/hero/stud8.JPG',
+    '/images/hero/stud13.JPG',
+    '/images/hero/stud9.JPG',
+    '/images/hero/ss8.JPG'
   ];
 
   const features = [
@@ -89,7 +89,7 @@ const Home = () => {
       description: 'Interactive lessons that make education exciting and memorable for every child.',
       color: 'bg-gradient-to-br from-purple-200 to-purple-300',
       textColor: 'text-purple-700',
-      image: feature1Img
+      image: '/images/hero/stud5.JPG'
     },
     {
       number: 2,
@@ -97,7 +97,7 @@ const Home = () => {
       description: '24/7 CCTV supervision and safe environment for peace of mind.',
       color: 'bg-gradient-to-br from-pink-200 to-pink-300',
       textColor: 'text-pink-700',
-      image: feature2Img
+      image: '/images/hero/stud11.JPG'
     },
     {
       number: 3,
@@ -105,7 +105,7 @@ const Home = () => {
       description: 'Modern, colorful classrooms equipped with the latest learning technology.',
       color: 'bg-gradient-to-br from-blue-200 to-blue-300',
       textColor: 'text-blue-700',
-      image: feature3Img
+      image: '/images/hero/ss13.JPG'
     }
   ];
 
@@ -218,7 +218,7 @@ const Home = () => {
             >
               <div className="relative">
                 <img
-                 src={schoolCommunityImg}
+                 src='/images/hero/stud10.JPG'
                   alt="Our School Community"
                   className="w-full h-96 object-cover rounded-3xl shadow-2xl"
                 />
@@ -261,7 +261,7 @@ const Home = () => {
       >
         <div className="relative">
           <img
-            src={happyChildrenImg}
+            src='/images/hero/stud7.JPG'
             alt="Happy children learning"
             className="w-full h-96 object-cover rounded-3xl shadow-2xl"
           />

@@ -102,7 +102,7 @@ const Footer = () => {
               <div className="relative">
                 <div className="rounded-2xl shadow-lg">
                   <img
-                    src={logoImage}
+                    src='/images/hero/ROYALS SCHOOL COMPLEX.png'
                     alt="EK Royals School Complex Logo"
                     className="h-12 w-auto" // Adjust height as needed
                   />

@@ -9,7 +9,7 @@ import {
 } from 'react-icons/fi';
 import { FaGraduationCap, FaStar } from 'react-icons/fa';
 import TopBar from './TopBar';
-import logoImage from '../public/images/hero/ROYALS SCHOOL COMPLEX.png';
+// import logoImage from '../public/images/hero/ROYALS SCHOOL COMPLEX.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,12 +54,11 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            {/* Logo with custom image */}
 <Link to="/" className="flex items-center space-x-2 group">
   <div className="relative">
     <div className="group-hover:scale-110 transition-transform duration-300">
       <img 
-        src={logoImage} 
+        src='/images/hero/ROYALS SCHOOL COMPLEX.png'
         alt="EK Royals School Complex Logo" 
         className="h-12 w-auto" // Adjust height as needed
       />

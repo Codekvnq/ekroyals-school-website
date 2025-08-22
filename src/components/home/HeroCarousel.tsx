@@ -3,46 +3,46 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight, FiPlay,FiMessageCircle, FiFileText } from 'react-icons/fi';
 import { FaStar, FaHeart, FaRocket, FaGraduationCap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import heroImage1 from '../../public/images/hero/stud2.jpg';
-import heroImage2 from '../../public/images/hero/stud7.jpg';
-import heroImage3 from '../../public/images/hero/stud10.jpg';
-import heroImage4 from '../../public/images/hero/stud1.jpg';
-import heroImage5 from '../../public/images/hero/stud5.jpg';
+// import heroImage1 from '../../public/images/hero/stud2.jpg';
+// import heroImage2 from '../../public/images/hero/stud7.jpg';
+// import heroImage3 from '../../public/images/hero/stud10.jpg';
+// import heroImage4 from '../../public/images/hero/stud1.jpg';
+// import heroImage5 from '../../public/images/hero/stud5.jpg';
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-     image: heroImage1,
+      image: '/images/hero/stud2.JPG',
       title: 'Welcome to EK Royals',
       subtitle: 'Creating a Caring & Exciting School Environment',
       description: 'Where every child discovers their potential through joyful learning, creative exploration, and endless possibilities in our magical world of education!',
       bgGradient: 'from-pink-400 via-purple-400 to-indigo-400'
     },
     {
-      image: heroImage2,
+      image: '/images/hero/stud7.JPG',
       title: 'Academic Excellence',
       subtitle: 'Preparing Young Minds for Tomorrow',
       description: 'Our innovative curriculum combines fun learning with academic rigor to ensure every child thrives, grows, and reaches for the stars!',
       bgGradient: 'from-school-blue-400 via-school-blue-500 to-school-yellow-400'
     },
     {
-      image: heroImage3,
+      image: '/images/hero/stud10.JPG',
       title: 'Modern Facilities',
       subtitle: 'State-of-the-Art Learning Spaces',
       description: 'Colorful classrooms, interactive labs, and safe play areas designed to inspire creativity, wonder, and lifelong learning adventures!',
       bgGradient: 'from-school-yellow-400 via-school-gold-400 to-school-blue-400'
     },
     {
-      image:heroImage4,
+      image:'/images/hero/ss1.JPG',
       title: 'Happy Community',
       subtitle: 'Every Child Matters Here',
       description: 'Join our vibrant school family where friendships bloom, dreams take flight, and every child feels valued, loved, and celebrated!',
       bgGradient: 'from-school-blue-400 via-school-yellow-400 to-school-gold-400'
     },
     {
-      image: heroImage5,
+      image: '/images/hero/stud5.JPG',
       title: 'Join Our Family',
       subtitle: 'Start Your Amazing Journey Today',
       description: 'Become part of our magical learning community where dreams come true, futures are bright, and every day is an adventure!',
