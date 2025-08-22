@@ -11,7 +11,7 @@ import {
   FiMapPin,
 } from "react-icons/fi";
 import { FaGraduationCap, FaStar, FaHeart, FaRocket } from "react-icons/fa";
-import logoImage from "../public/images/hero/ROYALS SCHOOL COMPLEX.png";
+// import logoImage from "../public/images/hero/ROYALS SCHOOL COMPLEX.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
