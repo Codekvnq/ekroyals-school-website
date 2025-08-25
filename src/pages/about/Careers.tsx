@@ -88,7 +88,7 @@ const Careers = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/8471998/pexels-photo-8471998.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/hero/ss23.JPG"
                 alt="Careers at EK Royals"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
@@ -307,7 +307,7 @@ const Careers = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-purple-600 mb-1">Email</h4>
-                    <p className="text-gray-700">hr@ekroyals.edu.gh</p>
+                    <p className="text-gray-700">ekroyalsschoolcomplex@gmail.com.com</p>
                     <p className="text-sm text-gray-600 mt-1">
                       Send your application with subject: "Application for [Position Title]"
                     </p>
@@ -320,7 +320,7 @@ const Careers = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-pink-600 mb-1">Phone</h4>
-                    <p className="text-gray-700">+233 (0) 123 456 789</p>
+                    <p className="text-gray-700"> +233 53 167 9337 / +233 25 692 8572</p>
                     <p className="text-sm text-gray-600 mt-1">
                       Call for inquiries about current openings
                     </p>

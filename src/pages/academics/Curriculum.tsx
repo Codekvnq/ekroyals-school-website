@@ -16,7 +16,7 @@ const Curriculum = () => {
       features: ['Play-based learning', 'Social skills development', 'Basic literacy and numeracy', 'Creative arts and crafts'],
       color: 'from-pink-400 to-pink-300',
       bgColor: 'bg-gradient-to-br from-pink-100 to-pink-200',
-      image: 'https://images.pexels.com/photos/8471998/pexels-photo-8471998.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/stud9.JPG'
     },
     {
       icon: FiBook,
@@ -25,7 +25,7 @@ const Curriculum = () => {
       features: ['Core subjects mastery', 'Interactive learning', 'Critical thinking development', 'Character building'],
       color: 'from-blue-400 to-blue-300',
       bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
-      image: 'https://images.pexels.com/photos/8500456/pexels-photo-8500456.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/stud5.JPG'
     },
     {
       icon: FiUsers,
@@ -34,16 +34,7 @@ const Curriculum = () => {
       features: ['Advanced curriculum', 'Leadership training', 'Career guidance', 'Extracurricular activities'],
       color: 'from-purple-400 to-purple-300',
       bgColor: 'bg-gradient-to-br from-purple-100 to-purple-200',
-      image: 'https://images.pexels.com/photos/8471929/pexels-photo-8471929.jpeg?auto=compress&cs=tinysrgb&w=600'
-    },
-    {
-      icon: FiAward,
-      title: 'Senior High School (Ages 15-18)',
-      description: 'Excellence in preparation for university and career readiness with specialized tracks and leadership opportunities.',
-      features: ['University preparation', 'Specialized tracks', 'Research projects', 'Leadership opportunities'],
-      color: 'from-orange-400 to-orange-300',
-      bgColor: 'bg-gradient-to-br from-orange-100 to-orange-200',
-      image: 'https://images.pexels.com/photos/8500534/pexels-photo-8500534.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/ss1.JPG'
     }
   ];
 
@@ -70,7 +61,7 @@ const Curriculum = () => {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -83,6 +74,11 @@ const Curriculum = () => {
               <p className="text-xl text-gray-700 leading-relaxed bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 Our comprehensive curriculum is designed to nurture young minds through engaging, 
                 interactive learning experiences that prepare students for success in the 21st century.
+                 We cultivate not just academic excellence but also creativity, 
+  leadership skills, and digital literacy to equip students for future challenges. Our innovative 
+  approach integrates technology with traditional values, ensuring each child develops strong 
+  character alongside intellectual capabilities in a nurturing, inclusive environment that 
+  celebrates individual strengths and learning styles.
               </p>
             </motion.div>
             
@@ -92,11 +88,13 @@ const Curriculum = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <img
-                src="https://images.pexels.com/photos/8471875/pexels-photo-8471875.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Academic Curriculum"
-                className="w-full h-96 object-cover rounded-3xl shadow-2xl"
-              />
+              <div className="aspect-w-16 aspect-h-9 rounded-3xl shadow-2xl overflow-hidden">
+                <img
+                  src='/images/hero/ss11.JPG'
+                  alt="Academic Curriculum"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -120,7 +118,7 @@ const Curriculum = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
             {programs.map((program, index) => (
               <motion.div
                 key={program.title}
@@ -128,33 +126,37 @@ const Curriculum = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`${program.bgColor} rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-4 border-white relative overflow-hidden`}
+                className={`${program.bgColor} rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-4 border-white relative overflow-hidden h-full`}
               >
                 <FiStar className="absolute top-2 right-2 text-yellow-400 text-lg animate-pulse" />
                 
-                <div className="flex items-start space-x-6 mb-6">
-                  <img
-                    src={program.image}
-                    alt={program.title}
-                    className="w-20 h-20 rounded-2xl object-cover shadow-lg"
-                  />
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${program.color} flex items-center justify-center shadow-lg`}>
-                    <program.icon className="h-8 w-8 text-white" />
+                {/* Program Image - Fixed sizing */}
+                <div className="mb-6">
+                  <div className="aspect-w-16 aspect-h-9 rounded-2xl shadow-lg overflow-hidden">
+                    <img
+                      src={program.image}
+                      alt={program.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-purple-600 mb-4 font-playful">
+                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${program.color} flex items-center justify-center shadow-lg mb-4 mx-auto`}>
+                  <program.icon className="h-8 w-8 text-white" />
+                </div>
+                
+                <h3 className="text-2xl font-bold text-purple-600 mb-4 font-playful text-center">
                   {program.title}
                 </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 leading-relaxed text-center">
                   {program.description}
                 </p>
                 
                 <div className="space-y-2">
                   {program.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center text-gray-700">
-                      <FiCheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      {feature}
+                      <FiCheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      <span className="text-sm">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -215,11 +217,13 @@ const Curriculum = () => {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <img
-                src="https://images.pexels.com/photos/8472082/pexels-photo-8472082.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Teaching Approach"
-                className="w-full h-96 object-cover rounded-3xl shadow-2xl"
-              />
+              <div className="aspect-w-16 aspect-h-9 rounded-3xl shadow-2xl overflow-hidden">
+                <img
+                  src='/images/hero/ss10.JPG'
+                  alt="Teaching Approach"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </motion.div>
 
             <motion.div

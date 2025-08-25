@@ -129,7 +129,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-purple-600 mb-4 font-playful">Address</h3>
               <p className="text-gray-700 leading-relaxed">
-                No. 2 Osei Nkwantabisa Avenue, Nhyiaeso – Kumasi
+               Lawyer Y.S kese, AE-0172-3256 – Ejisu Jamasi
               </p>
             </motion.div>
 
@@ -146,7 +146,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-pink-600 mb-4 font-playful">Call Us</h3>
               <p className="text-gray-700 leading-relaxed">
-                +233 20 806 1249
+                +233 53 167 9337 / +233 25 692 8572
               </p>
             </motion.div>
 
@@ -163,7 +163,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-blue-600 mb-4 font-playful">Email</h3>
               <p className="text-gray-700 leading-relaxed">
-                contact@ekroyalsschool.edu.gh
+                  ekroyalsschoolcomplex@gmail.com
               </p>
             </motion.div>
 
@@ -208,7 +208,7 @@ const Contact = () => {
                 <div className="space-y-6">
                   <div>
                     <label className="block text-sm font-bold text-purple-600 mb-2">
-                      Name *
+                      Name 
                     </label>
                     <input
                       type="text"
@@ -223,7 +223,7 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-bold text-purple-600 mb-2">
-                      Email *
+                      Email 
                     </label>
                     <input
                       type="email"
@@ -238,7 +238,7 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-bold text-purple-600 mb-2">
-                      Subject *
+                      Subject 
                     </label>
                     <input
                       type="text"
@@ -253,7 +253,7 @@ const Contact = () => {
 
                   <div>
                     <label className="block text-sm font-bold text-purple-600 mb-2">
-                      Message *
+                      Message 
                     </label>
                     <textarea
                       name="message"

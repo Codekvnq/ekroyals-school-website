@@ -88,7 +88,7 @@ const Home = () => {
       title: 'Fun Filled Learning',
       description: 'Interactive lessons that make education exciting and memorable for every child.',
       color: 'bg-gradient-to-br from-purple-200 to-purple-300',
-      textColor: 'text-purple-700',
+         textColor: 'text-pink-700',
       image: '/images/hero/stud5.JPG'
     },
     {
@@ -104,7 +104,7 @@ const Home = () => {
       title: 'Furnished Classrooms',
       description: 'Modern, colorful classrooms equipped with the latest learning technology.',
       color: 'bg-gradient-to-br from-blue-200 to-blue-300',
-      textColor: 'text-blue-700',
+         textColor: 'text-pink-700',
       image: '/images/hero/ss13.JPG'
     }
   ];
@@ -486,7 +486,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-purple-600 mb-1 text-lg">Address</h4>
-                    <p className="text-gray-600">No. 2 Osei Nkwantabisa Avenue, Nhyiaeso – Kumasi</p>
+                    <p className="text-gray-600">Lawyer Y.S kese, AE-0172-3256 – Ejisu Jamasi</p>
                   </div>
                 </div>
 
@@ -496,7 +496,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-purple-600 mb-1 text-lg">Phone</h4>
-                    <p className="text-gray-600">+233 20 806 1249</p>
+                    <p className="text-gray-600">  +233 53 167 9337 / +233 25 692 8572</p>
                   </div>
                 </div>
 
@@ -506,7 +506,7 @@ const Home = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-purple-600 mb-1 text-lg">Email</h4>
-                    <p className="text-gray-600">contact@ekroyalsschool.edu.gh</p>
+                    <p className="text-gray-600">ekroyalsschoolcomplex@gmail.com</p>
                   </div>
                 </div>
               </div>

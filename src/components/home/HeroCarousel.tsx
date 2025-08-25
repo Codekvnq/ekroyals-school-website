@@ -35,7 +35,7 @@ const HeroCarousel = () => {
       bgGradient: 'from-school-yellow-400 via-school-gold-400 to-school-blue-400'
     },
     {
-      image:'/images/hero/ss1.JPG',
+      image:'/images/hero/stud4.JPG',
       title: 'Happy Community',
       subtitle: 'Every Child Matters Here',
       description: 'Join our vibrant school family where friendships bloom, dreams take flight, and every child feels valued, loved, and celebrated!',

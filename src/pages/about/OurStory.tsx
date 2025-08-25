@@ -74,7 +74,7 @@ const OurStory = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/8472082/pexels-photo-8472082.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/hero/ss24.JPG"
                 alt="Our Story"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />

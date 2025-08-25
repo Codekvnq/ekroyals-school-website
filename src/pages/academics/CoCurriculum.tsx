@@ -16,7 +16,7 @@ const CoCurriculum = () => {
       benefits: ['Creative expression', 'Cultural awareness', 'Confidence building', 'Performance skills'],
       color: 'from-pink-400 to-pink-300',
       bgColor: 'bg-gradient-to-br from-pink-100 to-pink-200',
-      image: 'https://images.pexels.com/photos/8471929/pexels-photo-8471929.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image:  '/images/hero/ss8.JPG'
     },
     {
       icon: FaCalculator,
@@ -25,7 +25,7 @@ const CoCurriculum = () => {
       benefits: ['Mental calculation', 'Concentration', 'Memory enhancement', 'Problem-solving'],
       color: 'from-blue-400 to-blue-300',
       bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/stud5.JPG'
     },
     {
       icon: FaFootballBall,
@@ -34,7 +34,7 @@ const CoCurriculum = () => {
       benefits: ['Physical fitness', 'Teamwork', 'Discipline', 'Leadership skills'],
       color: 'from-green-400 to-green-300',
       bgColor: 'bg-gradient-to-br from-green-100 to-green-200',
-      image: 'https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image:'/images/hero/ss17.JPG'
     },
     {
       icon: FiUsers,
@@ -43,7 +43,7 @@ const CoCurriculum = () => {
       benefits: ['Public speaking', 'Critical thinking', 'Research skills', 'Confidence'],
       color: 'from-purple-400 to-purple-300',
       bgColor: 'bg-gradient-to-br from-purple-100 to-purple-200',
-      image: 'https://images.pexels.com/photos/8471998/pexels-photo-8471998.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/ss20.JPG'
     },
     {
       icon: FaGavel,
@@ -52,7 +52,7 @@ const CoCurriculum = () => {
       benefits: ['Civic awareness', 'Leadership', 'Legal knowledge', 'Social responsibility'],
       color: 'from-orange-400 to-orange-300',
       bgColor: 'bg-gradient-to-br from-orange-100 to-orange-200',
-      image: 'https://images.pexels.com/photos/8500456/pexels-photo-8500456.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/ss14.JPG'
     },
     {
       icon: FaChess,
@@ -61,7 +61,7 @@ const CoCurriculum = () => {
       benefits: ['Strategic thinking', 'Patience', 'Planning skills', 'Concentration'],
       color: 'from-indigo-400 to-indigo-300',
       bgColor: 'bg-gradient-to-br from-indigo-100 to-indigo-200',
-      image: 'https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/ss18.JPG'
     }
   ];
 
@@ -123,7 +123,7 @@ const CoCurriculum = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/8471875/pexels-photo-8471875.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/hero/ss19.JPG"
                 alt="Co-Curriculum Activities"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
@@ -162,16 +162,18 @@ const CoCurriculum = () => {
               >
                 <FiStar className="absolute top-2 right-2 text-yellow-400 text-lg animate-pulse" />
                 
-                <div className="flex items-start space-x-6 mb-6">
-                  <img
-                    src={activity.image}
-                    alt={activity.title}
-                    className="w-20 h-20 rounded-2xl object-cover shadow-lg"
-                  />
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${activity.color} flex items-center justify-center shadow-lg`}>
-                    <activity.icon className="h-8 w-8 text-white" />
-                  </div>
-                </div>
+              <div className="mb-6 flex flex-col items-center">
+  <img
+    src={activity.image}
+    alt={activity.title}
+    className="w-full h-40 object-cover rounded-2xl shadow-lg"
+  />
+  <div className={`mt-6 w-16 h-16 rounded-2xl bg-gradient-to-r ${activity.color} flex items-center justify-center shadow-lg`}>
+    <activity.icon className="h-8 w-8 text-white" />
+  </div>
+</div>
+
+
                 
                 <h3 className="text-2xl font-bold text-purple-600 mb-4 font-playful">
                   {activity.title}

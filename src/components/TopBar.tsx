@@ -10,11 +10,11 @@ const TopBar = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2 hover:text-yellow-300 transition-colors">
               <FiPhone className="h-4 w-4" />
-              <span className="hidden sm:inline">+233 20 806 1249</span>
+              <span className="hidden sm:inline">+233 53 167 9337 / +233 25 692 8572</span>
             </div>
             <div className="flex items-center space-x-2 hover:text-yellow-300 transition-colors">
               <FiMail className="h-4 w-4" />
-              <span className="hidden md:inline">contact@ekroyalsschool.edu.gh</span>
+              <span className="hidden md:inline">ekroyalsschoolcomplex@gmail.com</span>
             </div>
           </div>
 

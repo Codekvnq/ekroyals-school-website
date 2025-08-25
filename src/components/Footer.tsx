@@ -164,17 +164,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3 text-sm">
                 <FiMapPin className="h-5 w-5 text-accent-purple flex-shrink-0 mt-1" />
                 <span className="text-gray-300">
-                  No. 2 Osei Nkwantabisa Avenue, Nhyiaeso – Kumasi
+                  Lawyer Y.S kese, AE-0172-3256 – Ejisu Jamasi
                 </span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <FiPhone className="h-5 w-5 text-accent-pink flex-shrink-0" />
-                <span className="text-gray-300">+233 20 806 1249</span>
+                <span className="text-gray-300">+233 53 167 9337 / +233 25 692 8572 </span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <FiMail className="h-5 w-5 text-accent-yellow flex-shrink-0" />
                 <span className="text-gray-300">
-                  contact@ekroyalsschool.edu.gh
+                  ekroyalsschoolcomplex@gmail.com
                 </span>
               </div>
             </div>

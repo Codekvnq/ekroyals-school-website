@@ -17,7 +17,7 @@ const Admissions = () => {
       features: ['Play-based learning', 'Social skills development', 'Basic literacy', 'Creative activities'],
       color: 'from-pink-400 to-pink-300',
       bgColor: 'bg-gradient-to-br from-pink-100 to-pink-200',
-      image: 'https://images.pexels.com/photos/8471998/pexels-photo-8471998.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/stud9.JPG'
     },
     {
       icon: FaChild,
@@ -27,7 +27,7 @@ const Admissions = () => {
       features: ['Core subjects mastery', 'Interactive learning', 'Character building', 'Skill development'],
       color: 'from-blue-400 to-blue-300',
       bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
-      image: 'https://images.pexels.com/photos/8500456/pexels-photo-8500456.jpeg?auto=compress&cs=tinysrgb&w=600'
+    image: '/images/hero/ss14.JPG'
     },
     {
       icon: FaUserGraduate,
@@ -37,7 +37,7 @@ const Admissions = () => {
       features: ['Advanced curriculum', 'Leadership training', 'Career guidance', 'Exam preparation'],
       color: 'from-purple-400 to-purple-300',
       bgColor: 'bg-gradient-to-br from-purple-100 to-purple-200',
-      image: 'https://images.pexels.com/photos/8471929/pexels-photo-8471929.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: '/images/hero/stud5.JPG'
     }
   ];
 
@@ -121,7 +121,7 @@ const Admissions = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/8471875/pexels-photo-8471875.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src='/images/hero/stud10.JPG'
                 alt="Join Our School Community"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
@@ -161,16 +161,22 @@ const Admissions = () => {
               >
                 <FiStar className="absolute top-2 right-2 text-yellow-400 text-lg animate-pulse" />
                 
-                <div className="flex items-start space-x-6 mb-6">
-                  <img
-                    src={level.image}
-                    alt={level.title}
-                    className="w-20 h-20 rounded-2xl object-cover shadow-lg"
-                  />
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${level.color} flex items-center justify-center shadow-lg`}>
-                    <level.icon className="h-8 w-8 text-white" />
-                  </div>
-                </div>
+              <div className="mb-6 flex flex-col items-center">
+  {/* Image comes first */}
+  <img
+    src={level.image}
+    alt={level.title}
+    className="w-full h-40 object-cover rounded-2xl shadow-lg"
+  />
+
+  {/* Then the Icon below the image */}
+  <div className={`mt-4 w-16 h-16 rounded-2xl bg-gradient-to-r ${level.color} flex items-center justify-center shadow-lg`}>
+    <level.icon className="h-8 w-8 text-white" />
+  </div>
+</div>
+
+
+
                 
                 <h3 className="text-2xl font-bold text-purple-600 mb-2 font-playful">
                   {level.title}
@@ -244,7 +250,7 @@ const Admissions = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/8472082/pexels-photo-8472082.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/hero/ss15.JPG"
                 alt="When to Apply"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
@@ -330,7 +336,7 @@ const Admissions = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-white hover:text-purple-600 transition-all duration-300"
               >
-                Schedule Tour 🏫
+                Make enquiries 🏫
               </motion.button>
             </div>
           </motion.div>
