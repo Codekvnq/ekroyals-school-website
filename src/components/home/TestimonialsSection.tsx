@@ -11,25 +11,25 @@ const TestimonialsSection = () => {
       name: 'Sarah Mensah',
       role: 'Parent of Primary 5 Student',
       rating: 5,
-      text: 'EK Royals has transformed my daughter\'s learning experience! The teachers are so caring and dedicated, and the colorful facilities make learning so much fun. My child looks forward to school every single day! 🌟'
+      text: 'E.K Royals has transformed my daughter\'s learning experience! The teachers are so caring and dedicated, and the colorful facilities make learning so much fun. My child looks forward to school every single day! '
     },
     {
       name: 'Michael Asante',
       role: 'Parent of JHS 2 Student',
       rating: 5,
-      text: 'The holistic approach to education at EK Royals is absolutely remarkable! Not only has my son excelled academically, but he\'s also developed amazing leadership skills through their fun co-curricular programs. 🚀'
+      text: 'The holistic approach to education at E.K Royals is absolutely remarkable! Not only has my son excelled academically, but he\'s also developed amazing leadership skills through their fun co-curricular programs. '
     },
-    {
-      name: 'Grace Osei',
-      role: 'Former Student, Now at University',
-      rating: 5,
-      text: 'EK Royals prepared me wonderfully for university life! The foundation I received here, especially in critical thinking and problem-solving, has been absolutely invaluable in my higher education journey. Thank you! 💖'
-    },
+   {
+  name: 'Grace Osei',
+  role: 'Guardian of Former Student',
+  rating: 5,
+  text: 'As a guardian, I am truly grateful for the role E.K Royals played in shaping my ward’s future. The strong academic foundation and values instilled here prepared them excellently for university and life beyond. '
+},
     {
       name: 'Emmanuel Boateng',
       role: 'Parent of Pre-school Student',
       rating: 5,
-      text: 'The nurturing environment at EK Royals is absolutely perfect for young children! My son has grown tremendously in confidence and social skills since joining the magical pre-school program. Amazing! ✨'
+      text: 'The nurturing environment at E.K Royals is absolutely perfect for young children! My son has grown tremendously in confidence and social skills since joining the magical pre-school program. Amazing! '
     }
   ];
 
@@ -67,12 +67,12 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-accent-purple mb-4 font-playful">
+          <h2 className="text-4xl md:text-5xl font-bold text-school-blue-600  mb-4 font-playful">
             What Our Amazing Community Says
-            <FaHeart className="inline-block ml-3 text-accent-pink animate-pulse" />
+            <FaHeart className="inline-block ml-3 text-school-blue-600 animate-pulse" />
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from our wonderful parents, students, and alumni about their magical experiences at EK Royals! ✨
+            Hear from our wonderful parents, students, and alumni about their magical experiences at E.K Royals! 
           </p>
         </motion.div>
 
@@ -120,13 +120,13 @@ const TestimonialsSection = () => {
                   <div className="flex flex-col items-center">
                     <div className="relative mb-4">
                       <div className="w-20 h-20 rounded-full bg-gradient-to-r from-accent-purple/20 to-accent-pink/20 flex items-center justify-center ring-4 ring-accent-purple/30 shadow-lg">
-                        <FiUser className="h-10 w-10 text-accent-purple" />
+                        <FiUser className="h-10 w-10 text-accent-blueblack " />
                       </div>
-                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-accent-pink to-accent-purple rounded-full flex items-center justify-center">
+                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-accent-indigo to-accent-blueblack rounded-full flex items-center justify-center">
                         <FaHeart className="text-white text-sm" />
                       </div>
                     </div>
-                    <h4 className="text-xl font-bold text-accent-purple font-playful">
+                    <h4 className="text-xl font-bold text-accent-blueblack font-playful">
                       {testimonials[currentTestimonial].name}
                     </h4>
                     <p className="text-gray-600 font-medium">
@@ -143,7 +143,7 @@ const TestimonialsSection = () => {
                 onClick={prevTestimonial}
                 className="p-4 bg-white hover:bg-pastel-purple rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-110 border-2 border-accent-purple/20"
               >
-                <FiChevronLeft className="h-6 w-6 text-accent-purple" />
+                <FiChevronLeft className="h-6 w-6 text-school-blue-600" />
               </button>
 
               {/* Indicators */}
@@ -154,8 +154,8 @@ const TestimonialsSection = () => {
                     onClick={() => setCurrentTestimonial(index)}
                     className={`w-4 h-4 rounded-full transition-all duration-200 ${
                       index === currentTestimonial
-                        ? 'bg-accent-purple scale-125 shadow-lg'
-                        : 'bg-accent-purple/30 hover:bg-accent-purple/60'
+                        ? 'bg-accent-blueblack scale-125 shadow-lg'
+                        : 'bg-accent-blueblack/30 hover:text-gray/60'
                     }`}
                   />
                 ))}
@@ -165,7 +165,7 @@ const TestimonialsSection = () => {
                 onClick={nextTestimonial}
                 className="p-4 bg-white hover:bg-pastel-purple rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-110 border-2 border-accent-purple/20"
               >
-                <FiChevronRight className="h-6 w-6 text-accent-purple" />
+                <FiChevronRight className="h-6 w-6 text-school-blue-600" />
               </button>
             </div>
           </div>

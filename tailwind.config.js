@@ -9,12 +9,13 @@ export default {
         school: {
           blue: {
             50: '#eff6ff',
+            90: '#393E46',
             100: '#dbeafe',
             200: '#bfdbfe',
             500: '#4D8EFF',
             400: '#60a5fa',
             500: '#3b82f6',
-            600: '#2563eb',
+            600: '#1F2544',
             700: '#1d4ed8',
             800: '#1e40af',
             900: '#1e3a8a',
@@ -73,6 +74,7 @@ export default {
         },
         accent: {
           purple: '#8b5cf6',
+          blueblack: '#393E46',
           pink: '#f472b6',
           orange: '#fb923c',
           yellow: '#fbbf24',
@@ -92,7 +94,7 @@ export default {
         }
       },
       fontFamily: {
-        'playful': ['Comic Neue', 'cursive'],
+        'playful': ['Comic Neue', 'Comic Neue'],
         'clean': ['Inter', 'sans-serif'],
          'poppins': ["Poppins", "sans-serif"],
           'nunito': ["Nunito", "sans-serif"],

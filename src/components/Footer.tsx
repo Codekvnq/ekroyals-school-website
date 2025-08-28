@@ -60,12 +60,12 @@ const Footer = () => {
           >
             {/* Decorative elements */}
             <FaStar className="absolute top-4 right-4 text-accent-yellow text-2xl animate-pulse" />
-            <FaHeart className="absolute bottom-4 left-4 text-accent-pink text-xl animate-bounce" />
+            <FaHeart className="absolute bottom-4 left-4 text-accent-purple text-xl animate-bounce" />
 
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-playful">
                 Subscribe Today to Receive Important School Announcements &
-                Insights! 🎉
+                Insights! 
               </h3>
               <form
                 onSubmit={handleNewsletterSubmit}
@@ -83,9 +83,9 @@ const Footer = () => {
                   type="submit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3 bg-gradient-to-r from-accent-orange to-accent-yellow hover:from-accent-yellow hover:to-accent-orange text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="px-8 py-3 bg-[#32CD32] hover:bg-[#2CBD2D] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  Subscribe ✨
+                  Subscribe 
                 </motion.button>
               </form>
             </div>
@@ -112,15 +112,15 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white font-playful">
-                  EK Royals
+                  E.K Royals
                 </h3>
-                <p className="text-sm text-gray-300">School Complex ⭐</p>
+                <p className="text-sm text-gray-300">School Complex</p>
               </div>
             </div>
             <p className="text-gray-300 text-sm mb-6 leading-relaxed">
               Educating for Tomorrow - Nurturing young minds with excellence,
               integrity, and innovation in a magical learning environment where
-              dreams come true! ✨
+              dreams come true! 
             </p>
             <div className="flex space-x-3">
               <motion.a
@@ -158,7 +158,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-6 text-xl font-playful flex items-center">
               Get in Touch
-              <FaHeart className="ml-2 text-accent-pink animate-pulse" />
+              <FaHeart className="ml-2 text-accent-green animate-pulse" />
             </h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3 text-sm">
@@ -224,8 +224,8 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} EK Royals School Complex. All rights
-            reserved. Made with 💖
+            © {new Date().getFullYear()} E.K Royals School Complex. All rights
+            reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <Link

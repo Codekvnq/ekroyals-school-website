@@ -24,7 +24,7 @@ const Header = () => {
       path: null,
       dropdown: [
         { name: 'Our Story', path: '/about/story' },
-        { name: 'Careers at EK Royals', path: '/about/careers' }
+        { name: 'Careers at E.K Royals', path: '/about/careers' }
       ]
     },
     {
@@ -59,18 +59,18 @@ const Header = () => {
     <div className="group-hover:scale-110 transition-transform duration-300">
       <img 
         src='/images/hero/ROYALS SCHOOL COMPLEX.png'
-        alt="EK Royals School Complex Logo" 
+        alt="E.K Royals School Complex Logo" 
         className="h-12 w-auto" // Adjust height as needed
       />
     </div>
     <FaStar className="absolute -top-1 -right-1 h-3 w-3 text-yellow-400 animate-pulse" />
   </div>
-  <div className="block">
-    <h1 className="text-sm sm:text-base md:text-lg font-bold bg-gradient-to-r from-school-blue-500 to-school-blue-700 bg-clip-text text-transparent font-nunito">
-      EK Royals School Complex
-    </h1>
-    <p className="text-xs text-slate-700 font-medium block">Knowledge, Integrity and Law Immutable✨</p>
-  </div>
+<div className="block">
+  <h1 className="text-sm sm:text-base md:text-lg font-bold text-[#172f49] font-nunito">
+    E.K Royals School Complex
+  </h1>
+  <p className="text-xs text-[#172f49] font-medium block">Knowledge, Integrity and Law Immutable</p>
+</div>
 </Link>
 
             {/* Desktop Navigation */}
@@ -135,11 +135,12 @@ const Header = () => {
             {/* Actions */}
             <div className="flex items-center space-x-3">
               {/* Apply Now Button */}
-              <Link
-                to="/admissions"
-className="hidden sm:inline-flex px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow hover:shadow-md text-sm">
-                Apply Now ⭐
-              </Link>
+          <Link
+   to="/admissions"
+  className="hidden sm:inline-flex px-4 py-2 bg-[#32CD32] hover:bg-[#2CBD2D] text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow hover:shadow-md text-sm"
+>
+  Apply Now 
+</Link>
 
               {/* Mobile Menu Toggle */}
               <button
@@ -214,13 +215,14 @@ className="hidden sm:inline-flex px-4 py-2 bg-gradient-to-r from-blue-500 to-blu
                 ))}
                 
                 {/* Mobile Apply Now Button */}
-                <Link
-                  to="/admissions"
-                  onClick={() => setIsMenuOpen(false)}
-                className="block w-full mt-4 px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-bold rounded-full text-center text-sm transition-all duration-300 transform hover:scale-105 shadow hover:shadow-md"
+               <Link
+  to="/admissions"
+  onClick={() => setIsMenuOpen(false)}
+  className="block w-full mt-4 px-4 py-3 bg-[#9ACD32] hover:bg-[#8AB82D] text-white font-bold rounded-full text-center text-sm transition-all duration-300 transform hover:scale-105 shadow hover:shadow-md"
 >
-                  Apply Now ⭐
-                </Link>
+
+  Apply Now 
+</Link>
               </div>
             </motion.div>
           )}

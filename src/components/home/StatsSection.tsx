@@ -100,12 +100,12 @@ const StatsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-accent-purple mb-4 font-playful">
+          <h2 className="text-4xl md:text-5xl font-bold text-school-blue-600  mb-4 font-playful">
             Our Amazing Impact in Numbers
             <FaStar className="inline-block ml-3 text-accent-yellow animate-spin" style={{ animationDuration: '3s' }} />
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our thriving community of learners, educators, and achievers making magic happen every day! ✨
+            Join our thriving community of learners, educators, and achievers making magic happen every day!
           </p>
         </motion.div>
 
@@ -130,13 +130,13 @@ const StatsSection = () => {
                 </div>
                 
                 <div className="mb-3">
-                  <span className="text-4xl md:text-5xl font-bold text-accent-purple font-playful">
+                  <span className="text-4xl md:text-5xl font-bold text-accent-blueblack font-playful">
                     <Counter target={stat.value} />
                     {stat.suffix}
                   </span>
                 </div>
                 
-                <p className="text-lg font-bold text-gray-700">
+                <p className="text-lg font-nunito font-bold text-gray-600">
                   {stat.label}
                 </p>
               </div>
