@@ -67,7 +67,7 @@ const Curriculum = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-8 font-playful">
+              <h1 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-8 font-playful">
                 Academic Curriculum
                 <FaRocket className="inline-block ml-3 text-orange-500 animate-bounce" />
               </h1>
@@ -110,7 +110,7 @@ const Curriculum = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Our Academic Programs
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -145,7 +145,7 @@ const Curriculum = () => {
                   <program.icon className="h-8 w-8 text-white" />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-purple-600 mb-4 font-playful text-center">
+                <h3 className="text-2xl font-bold text-school-blue-600 mb-4 font-playful text-center">
                   {program.title}
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed text-center">
@@ -176,7 +176,7 @@ const Curriculum = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Core Subjects
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -197,7 +197,7 @@ const Curriculum = () => {
                 <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-100 to-pink-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                   <subject.icon className={`h-8 w-8 ${subject.color}`} />
                 </div>
-                <h3 className="font-bold text-purple-600 text-sm">
+                <h3 className="font-bold text-school-blue-90 text-sm">
                   {subject.name}
                 </h3>
               </motion.div>
@@ -232,24 +232,24 @@ const Curriculum = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-8 font-playful">
+              <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-8 font-playful">
                 Our Teaching Approach
               </h2>
               <div className="space-y-6">
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3">Interactive Learning</h3>
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3">Interactive Learning</h3>
                   <p className="text-gray-700">
                     We use hands-on activities, group discussions, and multimedia resources to make learning engaging and memorable.
                   </p>
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3">Personalized Education</h3>
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3">Personalized Education</h3>
                   <p className="text-gray-700">
                     Our teachers adapt their methods to meet each student's unique learning style and pace.
                   </p>
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3">Character Development</h3>
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3">Character Development</h3>
                   <p className="text-gray-700">
                     We integrate values education throughout our curriculum to build strong moral foundations.
                   </p>

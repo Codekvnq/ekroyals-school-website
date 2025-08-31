@@ -58,7 +58,7 @@ const OurStory = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-8 font-playful">
+              <h1 className="text-4xl md:text-5xl font-bold text-school-blue-600  mb-8 font-playful">
                 Our Story
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
@@ -74,7 +74,7 @@ const OurStory = () => {
               className="relative"
             >
               <img
-                src="/images/hero/ss24.JPG"
+                src="/images/hero/stud50.JPG"
                 alt="Our Story"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
@@ -93,7 +93,7 @@ const OurStory = () => {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-8 text-center font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-8 text-center font-playful">
               The Beginning of Excellence
             </h2>
             
@@ -148,7 +148,7 @@ const OurStory = () => {
               </div>
               <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-white/50 rounded-full"></div>
               
-              <h3 className="text-2xl font-bold text-purple-600 mb-6 font-playful">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-school-blue-600 mb-6 font-playful">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
                 To provide quality education that nurtures intellectual growth, character development, 
                 and social responsibility. We are committed to creating a supportive learning environment 
@@ -169,7 +169,7 @@ const OurStory = () => {
               </div>
               <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-white/50 rounded-full"></div>
               
-              <h3 className="text-2xl font-bold text-blue-600 mb-6 font-playful">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-school-blue-600 mb-6 font-playful">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
                 To be a leading educational institution recognized for excellence in teaching, learning, 
                 and character development. We envision a school community where innovation thrives, 
@@ -194,12 +194,12 @@ const OurStory = () => {
             >
               <div className="text-center">
                 <img
-                  src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  src="/images/hero/stud70.JPG"
                   alt="Principal"
                   className="w-48 h-48 mx-auto rounded-full object-cover mb-6 ring-4 ring-purple-300 shadow-2xl"
                 />
-                <h3 className="text-xl font-semibold text-purple-600 font-playful">
-                  Mr. Emmanuel K. Asante
+                <h3 className="text-xl font-semibold text-school-blue-600 font-playful">
+                  Not set yet
                 </h3>
                 <p className="text-gray-600">Principal</p>
               </div>
@@ -212,7 +212,7 @@ const OurStory = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-2"
             >
-              <h3 className="text-3xl font-bold text-purple-600 mb-8 font-playful">
+              <h3 className="text-3xl font-bold text-school-blue-600 mb-8 font-playful">
                 Message from the Principal
               </h3>
               <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl space-y-6 text-lg text-gray-700 leading-relaxed">
@@ -254,7 +254,7 @@ const OurStory = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Our Core Values
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -279,7 +279,7 @@ const OurStory = () => {
                 <div className={`w-20 h-20 bg-gradient-to-r ${value.color} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <value.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-purple-600 mb-4 font-playful">
+                <h3 className="text-xl font-semibold text-school-blue-90  mb-4 font-playful">
                   {value.title}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">

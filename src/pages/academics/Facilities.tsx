@@ -124,7 +124,7 @@ const Facilities = () => {
           <FaRocket className="text-orange-400 text-4xl animate-pulse" />
         </div>
         <div className="absolute bottom-10 right-10 opacity-30">
-          <FaGraduationCap className="text-purple-400 text-5xl animate-bounce" />
+          <FaGraduationCap className="text-school-blue-90 text-5xl animate-bounce" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,7 +134,7 @@ const Facilities = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-8 font-playful">
+              <h1 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-8 font-playful">
                 Academic Facilities
                 <FaRocket className="inline-block ml-3 text-orange-500 animate-bounce" />
               </h1>
@@ -178,7 +178,7 @@ const Facilities = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Our Amazing Facilities
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -207,7 +207,7 @@ const Facilities = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-purple-600 mb-4 font-playful text-center">
+                <h3 className="text-2xl font-bold text-school-blue-90 mb-4 font-playful text-center">
                   {facility.title}
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed text-center">
@@ -252,12 +252,12 @@ const Facilities = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-8 font-playful">
+              <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-8 font-playful">
                 Why Our Facilities Matter
               </h2>
               <div className="space-y-6">
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3">
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3">
                     Safe Learning Environment
                   </h3>
                   <p className="text-gray-700">
@@ -266,7 +266,7 @@ const Facilities = () => {
                   </p>
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3">
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3">
                     Modern Technology
                   </h3>
                   <p className="text-gray-700">
@@ -275,7 +275,7 @@ const Facilities = () => {
                   </p>
                 </div>
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3">
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3">
                     Holistic Development
                   </h3>
                   <p className="text-gray-700">

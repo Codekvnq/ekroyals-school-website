@@ -71,7 +71,7 @@ const Careers = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-8 font-playful">
+              <h1 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-8 font-playful">
                 Careers at EK Royals
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
@@ -107,7 +107,7 @@ const Careers = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Why Work With Us?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -129,7 +129,7 @@ const Careers = () => {
               </div>
               <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-white/50 rounded-full"></div>
               
-              <h3 className="text-2xl font-semibold text-purple-600 mb-6 font-playful">
+              <h3 className="text-2xl font-semibold text-school-blue-600 mb-6 font-playful">
                 What We Offer
               </h3>
               <ul className="space-y-3">
@@ -147,10 +147,10 @@ const Careers = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-8 text-white shadow-xl border-4 border-white relative overflow-hidden"
+              className=" bg-[#1a293f] hover:bg-[#111c35] rounded-3xl p-8 text-white shadow-xl border-4 border-white relative overflow-hidden"
             >
               <div className="absolute top-4 right-4">
-                <FaHeart className="text-pink-300 text-2xl animate-pulse" />
+                <FaHeart className="text-accent-green text-2xl animate-pulse" />
               </div>
               <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-white/20 rounded-full"></div>
               
@@ -184,7 +184,7 @@ const Careers = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Our Recruitment Process
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -208,11 +208,11 @@ const Careers = () => {
                 <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-purple-100 rounded-full"></div>
                 
                 <div className="absolute -top-4 left-8">
-                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-8 h-8 bg-gradient-to-r from-accent-blueblack to-pink-500 rounded-full flex items-center justify-center shadow-lg">
                     <span className="text-white font-semibold text-sm">{step.step}</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-purple-600 mb-4 mt-2 font-playful">
+                <h3 className="text-xl font-semibold text-school-blue-600 mb-4 mt-2 font-playful">
                   {step.title}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -234,12 +234,12 @@ const Careers = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-8 font-playful">
+              <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-8 font-playful">
                 How to Apply
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3 font-playful">
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3 font-playful">
                     Required Documents
                   </h3>
                   <ul className="space-y-2 text-gray-700">
@@ -271,7 +271,7 @@ const Careers = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-purple-600 mb-3 font-playful">
+                  <h3 className="text-xl font-semibold text-school-blue-600 mb-3 font-playful">
                     Application Tips
                   </h3>
                   <ul className="space-y-2 text-gray-700">
@@ -293,20 +293,20 @@ const Careers = () => {
               className="bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-8 shadow-xl border-4 border-white relative overflow-hidden"
             >
               <div className="absolute top-4 right-4">
-                <FaHeart className="text-pink-400 text-2xl animate-pulse" />
+                <FaHeart className="text-accent-grey text-2xl animate-pulse" />
               </div>
               <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-white/50 rounded-full"></div>
               
-              <h3 className="text-2xl font-semibold text-purple-600 mb-6 font-playful">
+              <h3 className="text-2xl font-semibold text-school-blue-600 mb-6 font-playful">
                 Contact HR Department
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-purple-200 p-3 rounded-xl">
-                    <FiMail className="h-6 w-6 text-purple-600" />
+                    <FiMail className="h-6 w-6 text-school-blue-90" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-purple-600 mb-1">Email</h4>
+                    <h4 className="font-semibold text-school-blue-90 mb-1">Email</h4>
                     <p className="text-gray-700">ekroyalsschoolcomplex@gmail.com.com</p>
                     <p className="text-sm text-gray-600 mt-1">
                       Send your application with subject: "Application for [Position Title]"
@@ -316,10 +316,10 @@ const Careers = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-pink-200 p-3 rounded-xl">
-                    <FiPhone className="h-6 w-6 text-pink-600" />
+                    <FiPhone className="h-6 w-6 text-school-blue-90" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pink-600 mb-1">Phone</h4>
+                    <h4 className="font-semibold text-school-blue-90 mb-1">Phone</h4>
                     <p className="text-gray-700"> +233 53 167 9337 / +233 25 692 8572</p>
                     <p className="text-sm text-gray-600 mt-1">
                       Call for inquiries about current openings
@@ -329,10 +329,10 @@ const Careers = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-blue-200 p-3 rounded-xl">
-                    <FiUsers className="h-6 w-6 text-blue-600" />
+                    <FiUsers className="h-6 w-6 text-school-blue-90" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-blue-600 mb-1">Office Hours</h4>
+                    <h4 className="font-semibold text-school-blue-90 mb-1">Office Hours</h4>
                     <p className="text-gray-700">Monday - Friday</p>
                     <p className="text-gray-700">8:00 AM - 5:00 PM</p>
                   </div>
@@ -340,7 +340,7 @@ const Careers = () => {
               </div>
 
               <div className="mt-8 p-6 bg-white rounded-xl shadow-lg">
-                <h4 className="font-semibold text-purple-600 mb-3">Quick Note</h4>
+                <h4 className="font-semibold text-school-blue-90 mb-3">Quick Note</h4>
                 <p className="text-sm text-gray-700 leading-relaxed">
                   We review applications on a rolling basis. While we acknowledge all applications, 
                   only shortlisted candidates will be contacted for the next stage of the process. 

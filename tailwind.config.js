@@ -7,6 +7,7 @@ export default {
       colors: {
         // School brand colors inspired by uniforms and building
         school: {
+          blueblack: { 600: '#393E46'},
           blue: {
             50: '#eff6ff',
             90: '#393E46',
@@ -76,6 +77,7 @@ export default {
           purple: '#8b5cf6',
           blueblack: '#393E46',
           pink: '#f472b6',
+          grey: '#222831',
           orange: '#fb923c',
           yellow: '#fbbf24',
           red: '#f87171',

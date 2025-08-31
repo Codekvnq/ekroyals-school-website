@@ -106,12 +106,12 @@ const CoCurriculum = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-8 font-playful">
+              <h1 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-8 font-playful">
                 Co-Curriculum Activities
                 <FaTrophy className="inline-block ml-3 text-yellow-500 animate-bounce" />
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                At EK Royals, we believe education goes beyond the classroom. Our extracurricular activities 
+                At E.K Royals, we believe education goes beyond the classroom. Our extracurricular activities 
                 help students discover their passions, develop leadership skills, and build lifelong friendships.
               </p>
             </motion.div>
@@ -142,7 +142,7 @@ const CoCurriculum = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600  mb-4 font-playful">
               Our Exciting Activities
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -175,7 +175,7 @@ const CoCurriculum = () => {
 
 
                 
-                <h3 className="text-2xl font-bold text-purple-600 mb-4 font-playful">
+                <h3 className="text-2xl font-bold text-school-blue-600 mb-4 font-playful">
                   {activity.title}
                 </h3>
                 <p className="text-gray-700 mb-6 leading-relaxed">
@@ -183,7 +183,7 @@ const CoCurriculum = () => {
                 </p>
                 
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-purple-600 mb-2">Benefits:</h4>
+                  <h4 className="font-semibold text-school-blue-600 mb-2">Benefits:</h4>
                   {activity.benefits.map((benefit, idx) => (
                     <div key={idx} className="flex items-center text-gray-700 text-sm">
                       <div className="w-2 h-2 bg-purple-400 rounded-full mr-2"></div>
@@ -207,7 +207,7 @@ const CoCurriculum = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Why Co-Curriculum Matters
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -226,9 +226,9 @@ const CoCurriculum = () => {
                 className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 text-center group hover:-translate-y-2"
               >
                 <div className="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-purple-100 to-pink-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <benefit.icon className="h-10 w-10 text-purple-600" />
+                  <benefit.icon className="h-10 w-10 text-school-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-purple-600 mb-4 font-playful">
+                <h3 className="text-xl font-bold text-school-blue-600 mb-4 font-playful">
                   {benefit.title}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -248,7 +248,7 @@ const CoCurriculum = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl p-12 text-white relative overflow-hidden"
+            className=" bg-[#1a293f] rounded-3xl p-12 text-white relative overflow-hidden"
           >
             <FiStar className="absolute top-4 right-4 text-yellow-300 text-2xl animate-pulse" />
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playful">
@@ -261,9 +261,9 @@ const CoCurriculum = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-purple-600 font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white text-school-blue-600 font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Learn More About Admissions ✨
+              Learn More About Admissions 
             </motion.button>
           </motion.div>
         </div>

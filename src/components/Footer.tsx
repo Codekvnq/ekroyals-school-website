@@ -9,12 +9,15 @@ import {
   FiMail,
   FiPhone,
   FiMapPin,
+    FiCheck
 } from "react-icons/fi";
 import { FaGraduationCap, FaStar, FaHeart, FaRocket } from "react-icons/fa";
 // import logoImage from "../public/images/hero/ROYALS SCHOOL COMPLEX.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const quickLinks = [
     { name: "Our Story", path: "/about/story" },
@@ -32,9 +35,27 @@ const Footer = () => {
     // { name: 'Senior High School', path: '/academics/curriculum#shs' }
   ];
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+ const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Newsletter signup:", email);
+    if (!email) return;
+    
+    setIsLoading(true);
+    
+    // Simulate API call with a delay
+    setTimeout(() => {
+      setIsSubscribed(true);
+      setIsLoading(false);
+      
+      // Auto-reset after 5 seconds (optional)
+      // setTimeout(() => {
+      //   setIsSubscribed(false);
+      //   setEmail("");
+      // }, 5000);
+    }, 1500);
+  };
+
+  const handleResetSubscription = () => {
+    setIsSubscribed(false);
     setEmail("");
   };
 
@@ -60,38 +81,77 @@ const Footer = () => {
           >
             {/* Decorative elements */}
             <FaStar className="absolute top-4 right-4 text-accent-yellow text-2xl animate-pulse" />
-            <FaHeart className="absolute bottom-4 left-4 text-accent-purple text-xl animate-bounce" />
+            <FaHeart className="absolute bottom-4 left-4 text-accent-green text-xl animate-bounce" />
 
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-playful">
-                Subscribe Today to Receive Important School Announcements &
-                Insights! 
+                {isSubscribed 
+                  ? "You're Subscribed! 🎉" 
+                  : "Subscribe Today to Receive Important School Announcements & Insights!"
+                }
               </h3>
-              <form
-                onSubmit={handleNewsletterSubmit}
-                className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
-              >
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  className="flex-1 px-6 py-3 bg-white rounded-full text-gray-700 font-medium shadow-lg focus:outline-none focus:ring-4 focus:ring-accent-purple/50"
-                  required
-                />
-                <motion.button
-                  type="submit"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3 bg-[#32CD32] hover:bg-[#2CBD2D] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+              
+              {isSubscribed ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="flex flex-col items-center justify-center space-y-4"
                 >
-                  Subscribe 
-                </motion.button>
-              </form>
+                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+                    <FiCheck className="h-8 w-8 text-white" />
+                  </div>
+                  <p className="text-gray-200">
+                    Thank you for subscribing to our newsletter!
+                  </p>
+                  <motion.button
+                    onClick={handleResetSubscription}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-300 text-sm"
+                  >
+                    Change Email
+                  </motion.button>
+                </motion.div>
+              ) : (
+                <form
+                  onSubmit={handleNewsletterSubmit}
+                  className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+                >
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email address"
+                    className="flex-1 px-6 py-3 bg-white rounded-full text-gray-700 font-medium shadow-lg focus:outline-none focus:ring-4 focus:ring-accent-purple/50"
+                    required
+                    disabled={isLoading}
+                  />
+                  <motion.button
+                    type="submit"
+                    whileHover={{ scale: isLoading ? 1 : 1.05 }}
+                    whileTap={{ scale: isLoading ? 1 : 0.95 }}
+                    disabled={isLoading}
+                    className="px-8 py-3 bg-[#32CD32] hover:bg-[#2CBD2D] text-white font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center min-w-[130px]"
+                  >
+                    {isLoading ? (
+                      <>
+                        <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Subscribing
+                      </>
+                    ) : (
+                      "Subscribe"
+                    )}
+                  </motion.button>
+                </form>
+              )}
             </div>
           </motion.div>
         </div>
       </div>
+
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -118,7 +178,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 text-sm mb-6 leading-relaxed">
-              Educating for Tomorrow - Nurturing young minds with excellence,
+              Knowledge, Integrity and Law Immutable - Nurturing young minds with excellence,
               integrity, and innovation in a magical learning environment where
               dreams come true! 
             </p>

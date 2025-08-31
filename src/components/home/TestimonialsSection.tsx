@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
         <FaHeart className="text-accent-pink text-5xl animate-pulse" />
       </div>
       <div className="absolute bottom-10 right-10 opacity-20">
-        <div className="w-16 h-16 border-4 border-accent-purple rounded-full border-dashed animate-spin" style={{ animationDuration: '6s' }}></div>
+        <div className="w-16 h-16 border-4 border-accent-blueblack rounded-full border-dashed animate-spin" style={{ animationDuration: '6s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
             <FaHeart className="inline-block ml-3 text-school-blue-600 animate-pulse" />
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from our wonderful parents, students, and alumni about their magical experiences at E.K Royals! 
+            Hear from our wonderful parents, students, and guardians about their magical experiences at E.K Royals! 
           </p>
         </motion.div>
 

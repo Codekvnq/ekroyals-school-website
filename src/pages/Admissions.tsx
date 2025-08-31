@@ -37,7 +37,7 @@ const Admissions = () => {
       features: ['Advanced curriculum', 'Leadership training', 'Career guidance', 'Exam preparation'],
       color: 'from-purple-400 to-purple-300',
       bgColor: 'bg-gradient-to-br from-purple-100 to-purple-200',
-      image: '/images/hero/stud5.JPG'
+      image: '/images/hero/ss1.JPG'
     }
   ];
 
@@ -79,7 +79,7 @@ const Admissions = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-purple-100 via-blue-100 to-pink-100 relative overflow-hidden">
         <div className="absolute top-10 left-10 opacity-30">
-          <FaGraduationCap className="text-purple-400 text-4xl animate-pulse" />
+          <FaGraduationCap className="text-school-blue-90 text-4xl animate-pulse" />
         </div>
         <div className="absolute bottom-10 right-10 opacity-30">
           <FaRocket className="text-orange-400 text-5xl animate-bounce" />
@@ -92,14 +92,14 @@ const Admissions = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-8 font-playful">
+              <h1 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-8 font-playful">
                 Join Our School Community
-                <FaHeart className="inline-block ml-3 text-pink-500 animate-pulse" />
+                <FaHeart className="inline-block ml-3 text-grey-500 animate-pulse" />
               </h1>
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg space-y-4">
                 <p className="text-lg text-gray-700 leading-relaxed">
                   We welcome students at multiple entry levels who are ready to learn, grow and excel. 
-                  At EK Royals School Complex, we work tirelessly to create a vibrant, nurturing, and 
+                  At E.K Royals School Complex, we work tirelessly to create a vibrant, nurturing, and 
                   inspiring environment where every learner can thrive.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -140,11 +140,11 @@ const Admissions = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Entry Levels
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              EK Royals School Complex offers entry at various levels to meet the needs of learners 
+              E.K Royals School Complex offers entry at various levels to meet the needs of learners 
               at every stage of their educational journey.
             </p>
           </motion.div>
@@ -178,10 +178,10 @@ const Admissions = () => {
 
 
                 
-                <h3 className="text-2xl font-bold text-purple-600 mb-2 font-playful">
+                <h3 className="text-2xl font-bold text-school-blue-600 mb-2 font-playful">
                   {level.title}
                 </h3>
-                <p className="text-sm font-semibold text-purple-500 mb-4">
+                <p className="text-sm font-semibold text-school-blue-90 mb-4">
                   {level.ageRange}
                 </p>
                 <p className="text-gray-700 mb-6 leading-relaxed">
@@ -212,14 +212,14 @@ const Admissions = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-8 font-playful">
+              <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-8 font-playful">
                 When To Apply
               </h2>
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
                 <div className="flex items-center mb-6">
-                  <FiCalendar className="h-8 w-8 text-purple-600 mr-4" />
+                  <FiCalendar className="h-8 w-8 text-school-blue-600 mr-4" />
                   <div>
-                    <h3 className="text-xl font-semibold text-purple-600">Application Period</h3>
+                    <h3 className="text-xl font-semibold text-school-blue-600">Application Period</h3>
                     <p className="text-gray-600">Open throughout the year</p>
                   </div>
                 </div>
@@ -227,14 +227,14 @@ const Admissions = () => {
                   Admissions are open from January to December each year and Monday to Saturday of every week.
                 </p>
                 <div className="bg-purple-50 rounded-xl p-6">
-                  <h4 className="font-semibold text-purple-600 mb-3">Office Hours:</h4>
+                  <h4 className="font-semibold text-school-blue-600 mb-3">Office Hours:</h4>
                   <div className="space-y-2 text-gray-700">
                     <div className="flex items-center">
-                      <FiClock className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiClock className="h-4 w-4 mr-2 text-school-blue-90" />
                       <span>Monday - Friday: 7:00 AM - 3:00 PM</span>
                     </div>
                     <div className="flex items-center">
-                      <FiClock className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiClock className="h-4 w-4 mr-2 text-school-blue-90" />
                       <span>Saturday: 9:00 AM - 12:00 PM</span>
                     </div>
                   </div>
@@ -269,7 +269,7 @@ const Admissions = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-600 mb-4 font-playful">
+            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
               Admission Process
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -290,11 +290,11 @@ const Admissions = () => {
                 <FiStar className="absolute top-2 right-2 text-yellow-400 text-lg animate-pulse" />
                 
                 <div className="absolute -top-4 left-8">
-                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-8 h-8 bg-gradient-to-r from-accent-blueblack to-pink-500 rounded-full flex items-center justify-center shadow-lg">
                     <span className="text-white font-semibold text-sm">{step.step}</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-purple-600 mb-4 mt-2 font-playful">
+                <h3 className="text-xl font-semibold text-school-blue-600 mb-4 mt-2 font-playful">
                   {step.title}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -307,41 +307,48 @@ const Admissions = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-purple-500 to-pink-500">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-white relative"
-          >
-            <FiStar className="absolute top-0 right-0 text-yellow-300 text-3xl animate-pulse" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playful">
-              Ready to Begin Your Journey?
-            </h2>
-            <p className="text-xl mb-8 leading-relaxed">
-              Join the EK Royals family today and give your child the best foundation for a bright future!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-purple-600 font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Start Application ✨
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-white hover:text-purple-600 transition-all duration-300"
-              >
-                Make enquiries 🏫
-              </motion.button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+<section className="py-20 bg-gradient-to-r from-accent-blueblack to-accent-grey">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-white relative"
+    >
+      <FiStar className="absolute top-0 right-0 text-yellow-300 text-3xl animate-pulse" />
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playful">
+        Ready to Begin Your Journey?
+      </h2>
+      <p className="text-xl mb-8 leading-relaxed">
+        Join the E.K Royals family today and give your child the best foundation for a bright future!
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-white text-school-blue-600 font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+          onClick={() => window.open("https://docs.google.com/forms/d/e/your-form-id/viewform", "_blank")}
+        >
+          Start Application 
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-white hover:text-school-blue-600 transition-all duration-300"
+          onClick={() => {
+            const whatsappNumber = "233531679337"; // Without the + sign
+            const whatsappMessage = "Hello, I would like to make an enquiry about E.K Royals School Complex admissions";
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, "_blank");
+          }}
+        >
+          Make enquiries 
+        </motion.button>
+      </div>
+    </motion.div>
+  </div>
+</section>
     </div>
   );
 };

@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState, useRef   } from "react";
+import emailjs from 'emailjs-com';
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
   FiBook,
@@ -49,6 +50,81 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [showMessageModal, setShowMessageModal] = useState(false);
+const [modalMessage, setModalMessage] = useState('');
+const [modalType, setModalType] = useState<'success' | 'error'>('success');
+  const [formStatus, setFormStatus] = useState({ 
+    isSubmitting: false, 
+    isSuccess: false, 
+    isError: false,
+    message: '' 
+  });
+  const formRef = useRef<HTMLFormElement>(null);
+
+   // Initialize EmailJS with your public key
+  useEffect(() => {
+    emailjs.init("yx0k9fr2X0b2gy9_y"); // Replace with your EmailJS public key
+  }, []);
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setFormStatus({ isSubmitting: true, isSuccess: false, isError: false, message: '' });
+
+  try {
+    const now = new Date();
+    const formData = new FormData(formRef.current!);
+    const formParams = {
+      first_name: formData.get('first_name'),
+      last_name: formData.get('last_name'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+      date: now.toLocaleDateString(),
+      time: now.toLocaleTimeString(),
+    };
+
+    const result = await emailjs.send(
+      'service_tim4u16',
+      'template_uizx9x2', 
+      formParams,
+      'yx0k9fr2X0b2gy9_y'
+    );
+    
+    if (result.text === 'OK') {
+      console.log('Email sent successfully:', result.text);
+      setFormStatus({ 
+        isSubmitting: false, 
+        isSuccess: true, 
+        isError: false, 
+        message: 'Message sent successfully! We will get back to you soon.' 
+      });
+      
+      // Show success modal
+      setShowMessageModal(true);
+      setModalMessage('Message sent successfully! We will get back to you soon.');
+      setModalType('success');
+      
+      // Reset the form
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+    }
+  } catch (error) {
+    console.error('Error sending email:', error);
+    setFormStatus({ 
+      isSubmitting: false, 
+      isSuccess: false, 
+      isError: true, 
+      message: 'Sorry, there was an error sending your message. Please try again later.' 
+    });
+    
+    // Show error modal
+    setShowMessageModal(true);
+    setModalMessage('Sorry, there was an error sending your message. Please try again later.');
+    setModalType('error');
+  }
+};
 
   const programs = [
     {
@@ -252,8 +328,8 @@ const Home = () => {
                 />
                 {/* Decorative elements around image */}
                 <FaStar className="absolute -top-4 -left-4 text-yellow-400 text-3xl animate-pulse" />
-                <FaStar className="absolute -top-2 -right-6 text-pink-400 text-2xl animate-bounce" />
-                <FaStar className="absolute -bottom-4 -left-6 text-purple-400 text-2xl animate-pulse" />
+                <FaStar className="absolute -top-2 -right-6 text-green-400 text-2xl animate-bounce" />
+                <FaStar className="absolute -bottom-4 -left-6 text-green-400 text-2xl animate-pulse" />
                 <FaStar className="absolute -bottom-2 -right-4 text-orange-400 text-3xl animate-bounce" />
               </div>
             </motion.div>
@@ -295,10 +371,10 @@ const Home = () => {
                 />
                 {/* Decorative swirls and dots */}
                 <div
-                  className="absolute -top-6 -left-6 w-12 h-12 border-4 border-purple-400 rounded-full border-dashed animate-spin"
+                  className="absolute -top-6 -left-6 w-12 h-12 border-4 border-school-blue-90 opacity-20 rounded-full border-dashed animate-spin"
                   style={{ animationDuration: "4s" }}
                 ></div>
-                <div className="absolute -bottom-6 -right-6 w-8 h-8 bg-pink-400 rounded-full animate-bounce"></div>
+                <div className="absolute -bottom-6 -right-6 w-8 h-8 bg-green-400 rounded-full animate-bounce"></div>
                 <div className="absolute top-4 -right-8 w-6 h-6 bg-yellow-400 rounded-full animate-pulse"></div>
               </div>
             </motion.div>
@@ -359,7 +435,7 @@ const Home = () => {
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
           <FaStar className="absolute top-20 left-20 text-6xl text-yellow-400 animate-pulse" />
           <FaRocket className="absolute top-40 right-20 text-5xl text-orange-400 animate-float" />
-          <FaPalette className="absolute bottom-40 left-10 text-4xl text-pink-400 animate-bounce" />
+          <FaPalette className="absolute bottom-40 left-10 text-4xl text-school-blue-90 animate-bounce" />
           <FaGamepad className="absolute bottom-20 right-40 text-5xl text-purple-400 animate-pulse" />
         </div>
 
@@ -446,7 +522,7 @@ const Home = () => {
       {/* Testimonials Section */}
       <TestimonialsSection />
 
-      {/* Gallery Section */}
+       {/* Gallery Section */}
       <section className="py-20 bg-gradient-to-r from-blue-100 via-white to-purple-100 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -456,9 +532,9 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-school-blue-600  mb-4 font-playful">
+            <h2 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-4 font-playful">
               Campus Gallery
-              <FaPalette className="inline-block ml-3 text-school-blue-90  animate-bounce" />
+              <FaPalette className="inline-block ml-3 text-school-blue-90 animate-bounce" />
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Take a colorful visual tour of our modern facilities and vibrant
@@ -477,6 +553,7 @@ const Home = () => {
                 className={`relative overflow-hidden rounded-2xl md:rounded-3xl group cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 ${
                   index === 0 ? "sm:col-span-2 md:col-span-2 md:row-span-2" : ""
                 }`}
+                onClick={() => setSelectedImage(image)}
               >
                 <div className="w-full h-full">
                   <img
@@ -491,7 +568,7 @@ const Home = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 md:pb-6">
                   <span className="text-white font-bold text-sm md:text-lg bg-white/20 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full">
-                    View Image 
+                    View Image
                   </span>
                 </div>
                 {/* Decorative corner star */}
@@ -501,6 +578,108 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Message Status Modal */}
+<AnimatePresence>
+  {showMessageModal && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
+      onClick={() => setShowMessageModal(false)}
+    >
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0, y: 20 }}
+        animate={{ scale: 1, opacity: 1, y: 0 }}
+        exit={{ scale: 0.9, opacity: 0, y: 20 }}
+        transition={{ type: "spring", damping: 20, stiffness: 300 }}
+        className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className={`p-6 text-center ${modalType === 'success' ? 'bg-green-100' : 'bg-red-100'}`}>
+          <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center ${
+            modalType === 'success' ? 'bg-school-blue-600' : 'bg-red-500'
+          }`}>
+            {modalType === 'success' ? (
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            ) : (
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            )}
+          </div>
+          
+          <h3 className="mt-4 text-xl font-bold text-gray-900">
+            {modalType === 'success' ? 'Success!' : 'Error'}
+          </h3>
+          
+          <p className="mt-2 text-gray-700">
+            {modalMessage}
+          </p>
+        </div>
+        
+        <div className="p-4 bg-gray-50 flex justify-center">
+          <button
+            onClick={() => setShowMessageModal(false)}
+            className={`px-6 py-2 rounded-full font-medium ${
+              modalType === 'success' 
+                ? 'bg-school-blue-90 hover:bg-school-blue-600 text-white' 
+                : 'bg-red-500 hover:bg-red-600 text-white'
+            } transition-colors duration-200`}
+          >
+            OK
+          </button>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
+      {/* Image Modal */}
+<AnimatePresence>
+  {selectedImage && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+      onClick={() => setSelectedImage(null)}
+    >
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.9, opacity: 0 }}
+        transition={{ type: "spring", damping: 25, stiffness: 200 }}
+        className="relative w-full max-w-4xl max-h-full flex items-center justify-center"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close Button - Mobile Optimized */}
+        <button
+          className="absolute -top-12 right-0 md:-top-10 md:-right-10 bg-black/70 text-white text-3xl md:text-4xl w-10 h-10 rounded-full flex items-center justify-center hover:bg-black hover:text-yellow-400 transition-all duration-300 z-10 shadow-lg"
+          onClick={() => setSelectedImage(null)}
+          aria-label="Close image"
+        >
+          &times;
+        </button>
+        
+        {/* Image Container */}
+        <div className="rounded-lg overflow-hidden shadow-2xl mx-auto">
+          <img
+            src={selectedImage}
+            alt="Enlarged view"
+            className="w-full h-auto max-h-[75vh] md:max-h-[80vh] object-contain"
+          />
+        </div>
+        
+        {/* Mobile-friendly backdrop click area */}
+        <div className="absolute inset-0 -z-10" onClick={() => setSelectedImage(null)}></div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
 
       {/* Contact Section */}
       <section className="py-20 bg-gradient-to-br from-white via-purple-100 to-pink-100 relative overflow-hidden">
@@ -582,7 +761,11 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <form className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-4 border-purple-200 relative overflow-hidden">
+               <form 
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-4 border-purple-200 relative overflow-hidden"
+              >
                 {/* Decorative elements */}
                 <FaStar className="absolute top-4 right-4 text-yellow-400 text-xl animate-pulse" />
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-200 rounded-full"></div>
@@ -590,62 +773,94 @@ const Home = () => {
                 <h3 className="text-2xl font-bold text-school-blue-90  mb-6 font-playful text-center">
                   Send Us a Message!
                 </h3>
+                 {/* Status Message */}
+                {formStatus.message && (
+                  <div className={`mb-6 p-4 rounded-2xl text-center ${
+                    formStatus.isSuccess 
+                      ? 'bg-green-100 text-green-700' 
+                      : formStatus.isError
+                      ? 'bg-red-100 text-red-700'
+                      : 'bg-blue-100 text-blue-700'
+                  }`}>
+                    {formStatus.message}
+                  </div>
+                )}
 
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
+             <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label className="block text-sm font-bold text-school-blue-600  mb-2">
+                    <label className="block text-sm font-bold text-school-blue-600 mb-2">
                       First Name
                     </label>
                     <input
                       type="text"
+                      name="first_name"
                       className="w-full px-4 py-3 border-2 border-purple-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-700 shadow-lg"
                       placeholder="Enter your first name"
+                      required
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-school-blue-600  mb-2">
+                    <label className="block text-sm font-bold text-school-blue-600 mb-2">
                       Last Name
                     </label>
                     <input
                       type="text"
+                      name="last_name"
                       className="w-full px-4 py-3 border-2 border-purple-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-700 shadow-lg"
                       placeholder="Enter your last name"
+                      required
                     />
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <label className="block text-sm font-bold text-school-blue-600  mb-2">
+                  <label className="block text-sm font-bold text-school-blue-600 mb-2">
                     Email
                   </label>
                   <input
                     type="email"
+                    name="email"
                     className="w-full px-4 py-3 border-2 border-purple-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-700 shadow-lg"
                     placeholder="Enter your email address"
+                    required
                   />
                 </div>
 
                 <div className="mb-6">
-                  <label className="block text-sm font-bold text-school-blue-600  mb-2">
+                  <label className="block text-sm font-bold text-school-blue-600 mb-2">
                     Message
                   </label>
                   <textarea
+                    name="message"
                     rows={5}
                     className="w-full px-4 py-3 border-2 border-purple-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white text-gray-700 resize-none shadow-lg"
                     placeholder="Tell us how we can help you..."
+                    required
                   ></textarea>
                 </div>
 
-               <motion.button
-  type="submit"
-  whileHover={{ scale: 1.02 }}
-  whileTap={{ scale: 0.98 }}
-  className="w-full bg-[#1a293f] hover:bg-[#111c35] text-white font-bold py-4 rounded-2xl transition-all duration-300 flex items-center justify-center shadow-xl hover:shadow-2xl text-lg"
->
-  <FiSend className="mr-2 h-5 w-5" />
-  Send Message 
-</motion.button>
-
+                <motion.button
+                  type="submit"
+                  disabled={formStatus.isSubmitting}
+                  whileHover={{ scale: formStatus.isSubmitting ? 1 : 1.02 }}
+                  whileTap={{ scale: formStatus.isSubmitting ? 1 : 0.98 }}
+                  className="w-full bg-[#1a293f] hover:bg-[#111c35] disabled:bg-gray-400 text-white font-bold py-4 rounded-2xl transition-all duration-300 flex items-center justify-center shadow-xl hover:shadow-2xl text-lg"
+                >
+                  {formStatus.isSubmitting ? (
+                    <div className="flex items-center">
+                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending...
+                    </div>
+                  ) : (
+                    <>
+                      <FiSend className="mr-2 h-5 w-5" />
+                      Send Message
+                    </>
+                  )}
+                </motion.button>
               </form>
             </motion.div>
           </div>
