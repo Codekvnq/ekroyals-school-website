@@ -174,7 +174,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       title: "Fun Filled Learning",
       description:
         "Interactive lessons that make education exciting and memorable for every child.",
-      color: "bg-gradient-to-br from-purple-200 to-purple-300",
+      color: "bg-gradient-to-br from-purple-100 to-purple-200",
       textColor: "text-school-blue-600 ",
       image: "/images/hero/stud5.JPG",
     },
@@ -183,7 +183,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       title: "Secured Atmosphere",
       description:
         "24/7 CCTV supervision and safe environment for peace of mind.",
-      color: "bg-gradient-to-br from-pink-200 to-pink-300",
+      color: "bg-gradient-to-br from-purple-100 to-purple-200",
       textColor: "text-school-blue-600 ",
       image: "/images/hero/stud11.JPG",
     },
@@ -192,7 +192,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       title: "Furnished Classrooms",
       description:
         "Modern, colorful classrooms equipped with the latest learning technology.",
-      color: "bg-gradient-to-br from-blue-200 to-blue-300",
+      color: "bg-gradient-to-br from-purple-100 to-purple-200",
       textColor: "text-school-blue-600 ",
       image: "/images/hero/ss13.JPG",
     },
@@ -294,7 +294,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     </p>
                   </div>
 
-                  <div className="bg-pink-100 rounded-2xl p-6">
+                  <div className="bg-purple-100 rounded-2xl p-6">
                     <h3 className="text-xl font-semibold text-school-blue-600  mb-4 flex items-center">
                       <FiTarget className="h-6 w-6 text-school-blue-600  mr-3" />
                       An Inclusive Curriculum for Every Learner
@@ -350,7 +350,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             <h2 className="text-4xl md:text-5xl font-bold text-school-blue-600  mb-4 font-playful">
               Cross Disciplinary Curriculum
             </h2>
-            <p className="text-lg text-gray-600 uppercase tracking-wider font-semibold">
+            <p className="text-lg text-gray-600 uppercase tracking-wider font-nunito font-semibold">
               INNOVATIVE LEARNING APPROACH
             </p>
           </motion.div>
@@ -725,7 +725,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </div>
 
                 <div className="flex items-start space-x-4 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                  <div className="bg-pink-200 p-4 rounded-2xl">
+                  <div className="bg-blue-200 p-4 rounded-2xl">
                     <FiPhone className="h-6 w-6 text-school-blue-90" />
                   </div>
                   <div>

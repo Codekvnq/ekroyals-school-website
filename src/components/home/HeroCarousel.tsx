@@ -7,7 +7,7 @@ const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Google Form URL for admissions (replace with your actual form URL)
-  const applyFormUrl = "https://docs.google.com/forms/d/e/your-form-id/viewform";
+  const applyFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScD8EOl9EeJwms_rmHqDBOSH8zJrpJToDg4KDOHdYHyDhG5tA/viewform?usp=preview";
   
   // WhatsApp number for enquiries
   const whatsappNumber = "233531679337"; // Without the + sign

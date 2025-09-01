@@ -83,7 +83,7 @@ const Header = () => {
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
                 {item.path === null ? (
-  <span className="flex items-center px-3 py-2 text-sm font-bold rounded-full transition-all duration-300 text-[#172f49] hover:bg-school-blue-50 hover:scale-105 cursor-pointer">
+  <span className="flex items-center px-3 py-2 text-sm font-bold font-nunito rounded-full transition-all duration-300 text-[#172f49] hover:bg-school-blue-50 hover:scale-105 cursor-pointer">
     {item.name}
     {item.dropdown && (
       <FiChevronDown
@@ -96,7 +96,7 @@ const Header = () => {
 ) : (
   <Link
     to={item.path}
-    className={`flex items-center px-3 py-2 text-sm font-bold rounded-full transition-all duration-300 ${
+    className={`flex items-center px-3 py-2 text-sm font-bold font-nunito rounded-full transition-all duration-300 ${
   location.pathname === item.path
     ? "bg-[#172f49] text-white shadow-md"
     : "text-[#172f49] hover:bg-school-blue-50 hover:scale-105"
@@ -179,7 +179,7 @@ const Header = () => {
                       <Link
                         to={item.path}
                         onClick={() => setIsMenuOpen(false)}
-                        className={`block px-4 py-3 text-sm font-bold rounded-xl transition-colors duration-200 ${
+                        className={`block px-4 py-3 text-sm font-bold font-nunito rounded-xl transition-colors duration-200 ${
                           location.pathname === item.path
                           ? 'bg-[#172f49] text-white'
                             : 'text-slate-800 hover:bg-slate-50'

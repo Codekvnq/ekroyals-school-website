@@ -244,27 +244,27 @@ const Careers = () => {
                   </h3>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center">
-                      <FiFileText className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiFileText className="h-4 w-4 mr-2 text-accent-grey" />
                       Updated CV/Resume
                     </li>
                     <li className="flex items-center">
-                      <FiFileText className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiFileText className="h-4 w-4 mr-2 text-accent-grey" />
                       Cover Letter
                     </li>
                     <li className="flex items-center">
-                      <FiFileText className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiFileText className="h-4 w-4 mr-2 text-accent-grey" />
                       Educational Certificates
                     </li>
                     <li className="flex items-center">
-                      <FiFileText className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiFileText className="h-4 w-4 mr-2 text-accent-grey" />
                       Teaching License (if applicable)
                     </li>
                     <li className="flex items-center">
-                      <FiFileText className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiFileText className="h-4 w-4 mr-2 text-accent-grey" />
                       Reference Letters (2-3)
                     </li>
                     <li className="flex items-center">
-                      <FiFileText className="h-4 w-4 mr-2 text-purple-500" />
+                      <FiFileText className="h-4 w-4 mr-2 text-accent-grey" />
                       Portfolio (for relevant positions)
                     </li>
                   </ul>
