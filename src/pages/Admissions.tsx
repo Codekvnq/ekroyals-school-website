@@ -15,8 +15,8 @@ const Admissions = () => {
       ageRange: 'Ages 3-5',
       description: 'Early childhood development with play-based learning in a nurturing environment.',
       features: ['Play-based learning', 'Social skills development', 'Basic literacy', 'Creative activities'],
-      color: 'from-pink-400 to-pink-300',
-      bgColor: 'bg-gradient-to-br from-pink-100 to-pink-200',
+      color: 'from-blue-400 to-blue-300',
+      bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
       image: '/images/hero/stud9.JPG'
     },
     {
@@ -35,8 +35,8 @@ const Admissions = () => {
       ageRange: 'Ages 12-14',
       description: 'Comprehensive secondary education preparing students for senior high school.',
       features: ['Advanced curriculum', 'Leadership training', 'Career guidance', 'Exam preparation'],
-      color: 'from-purple-400 to-purple-300',
-      bgColor: 'bg-gradient-to-br from-purple-100 to-purple-200',
+      color: 'from-blue-400 to-blue-300',
+      bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
       image: '/images/hero/ss1.JPG'
     }
   ];
@@ -307,7 +307,7 @@ const Admissions = () => {
       </section>
 
       {/* Call to Action */}
-<section className="py-20 bg-gradient-to-r from-accent-blueblack to-accent-grey">
+<section className="py-20 bg-gradient-to-r from-school-blue-600 to-school-blue-90">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <motion.div
       initial={{ opacity: 0, y: 20 }}
