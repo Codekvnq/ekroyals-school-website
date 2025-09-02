@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
 import { FiMusic, FiUsers, FiTrendingUp, FiAward, FiStar, FiTarget } from 'react-icons/fi';
 import { FaTheaterMasks, FaFootballBall, FaChess, FaGavel, FaCalculator, FaTrophy } from 'react-icons/fa';
 
@@ -8,6 +9,7 @@ const CoCurriculum = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const location = useLocation();
   const activities = [
     {
       icon: FaTheaterMasks,
@@ -240,34 +242,38 @@ const CoCurriculum = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-purple-100 via-white to-pink-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className=" bg-[#1a293f] rounded-3xl p-12 text-white relative overflow-hidden"
-          >
-            <FiStar className="absolute top-4 right-4 text-yellow-300 text-2xl animate-pulse" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playful">
-              Join Our Activities Today!
-            </h2>
-            <p className="text-xl mb-8 leading-relaxed">
-              Discover your talents, make new friends, and develop skills that will last a lifetime. 
-              Our co-curricular activities are waiting for you!
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-school-blue-600 font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Learn More About Admissions 
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
+     {/* Call to Action */}
+<section className="py-20 bg-gradient-to-r from-purple-100 via-white to-pink-100">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className=" bg-[#1a293f] rounded-3xl p-12 text-white relative overflow-hidden"
+    >
+      <FiStar className="absolute top-4 right-4 text-yellow-300 text-2xl animate-pulse" />
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playful">
+        Join Our Activities Today!
+      </h2>
+      <p className="text-xl mb-8 leading-relaxed">
+        Discover your talents, make new friends, and develop skills that will last a lifetime. 
+        Our co-curricular activities are waiting for you!
+      </p>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Link 
+          to="/admissions"
+          className="inline-block bg-white text-school-blue-600 font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+        >
+          Learn More About Admissions 
+        </Link>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
     </div>
   );
 };

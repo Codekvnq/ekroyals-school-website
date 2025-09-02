@@ -63,7 +63,7 @@ const OurStory = () => {
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 Founded with a vision to provide quality education that nurtures both academic excellence 
-                and character development, EK Royals School Complex has been transforming lives since 2022.
+                and character development, E.K Royals School Complex has been transforming lives since 2022.
               </p>
             </motion.div>
             
@@ -99,7 +99,7 @@ const OurStory = () => {
             
             <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                EK Royals School Complex was established in January 2022 with a clear mission: to provide 
+                E.K Royals School Complex was established in January 2022 with a clear mission: to provide 
                 exceptional education that prepares students for the challenges and opportunities of the 
                 21st century. Our founders recognized the need for a school that would combine academic 
                 rigor with character development, creating an environment where every child could thrive.
@@ -114,7 +114,7 @@ const OurStory = () => {
               </p>
               
               <p className="text-lg text-gray-700 leading-relaxed">
-                What sets EK Royals apart is our holistic approach to education. We believe that true 
+                What sets E.K Royals apart is our holistic approach to education. We believe that true 
                 learning extends beyond textbooks and examinations. Our curriculum integrates academic 
                 subjects with co-curricular activities, character education, and life skills development. 
                 We prepare our students not just to excel in their studies, but to become responsible 
@@ -122,7 +122,7 @@ const OurStory = () => {
               </p>
               
               <p className="text-lg text-gray-700 leading-relaxed">
-                Today, EK Royals School Complex stands as a testament to the power of vision, dedication, 
+                Today, E.K Royals School Complex stands as a testament to the power of vision, dedication, 
                 and community support. We continue to evolve and adapt, always keeping our students' 
                 best interests at heart while maintaining the values and principles that have guided us 
                 from the very beginning.
@@ -217,13 +217,13 @@ const OurStory = () => {
               </h3>
               <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Welcome to EK Royals School Complex, where every day brings new opportunities for 
+                  Welcome to E.K Royals School Complex, where every day brings new opportunities for 
                   learning, growth, and discovery. As the Principal, I am honored to lead this 
                   remarkable institution and work alongside our dedicated faculty, staff, students, 
                   and families.
                 </p>
                 <p>
-                  At EK Royals, we believe that education is a partnership between school and home. 
+                  At E.K Royals, we believe that education is a partnership between school and home. 
                   We are committed to providing not just academic excellence, but also nurturing 
                   the social, emotional, and moral development of our students. Our goal is to 
                   prepare young minds to become lifelong learners, critical thinkers, and responsible 
@@ -235,7 +235,7 @@ const OurStory = () => {
                   community, we ensure that each student has the support they need to thrive.
                 </p>
                 <p>
-                  I invite you to join our school family and experience the EK Royals difference. 
+                  I invite you to join our school family and experience the E.K Royals difference. 
                   Together, we will help your child reach for the stars and achieve their dreams.
                 </p>
               </div>

@@ -307,7 +307,7 @@ const Careers = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-school-blue-90 mb-1">Email</h4>
-                    <p className="text-gray-700">ekroyalsschoolcomplex@gmail.com.com</p>
+                    <p className="text-gray-700">ekroyalsschoolcomplex@gmail.com</p>
                     <p className="text-sm text-gray-600 mt-1">
                       Send your application with subject: "Application for [Position Title]"
                     </p>
@@ -315,7 +315,7 @@ const Careers = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-pink-200 p-3 rounded-xl">
+                  <div className="bg-purple-200 p-3 rounded-xl">
                     <FiPhone className="h-6 w-6 text-school-blue-90" />
                   </div>
                   <div>
