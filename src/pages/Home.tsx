@@ -599,7 +599,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       >
         <div className={`p-6 text-center ${modalType === 'success' ? 'bg-green-100' : 'bg-red-100'}`}>
           <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center ${
-            modalType === 'success' ? 'bg-school-blue-600' : 'bg-red-500'
+            modalType === 'success' ? 'bg-accent-green' : 'bg-red-500'
           }`}>
             {modalType === 'success' ? (
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -612,7 +612,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             )}
           </div>
           
-          <h3 className="mt-4 text-xl font-bold text-gray-900">
+          <h3 className="mt-4 text-xl font-bold text-green-900">
             {modalType === 'success' ? 'Success!' : 'Error'}
           </h3>
           
@@ -626,7 +626,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             onClick={() => setShowMessageModal(false)}
             className={`px-6 py-2 rounded-full font-medium ${
               modalType === 'success' 
-                ? 'bg-school-blue-90 hover:bg-school-blue-600 text-white' 
+                ? 'bg-green-500 hover:bg-green-600 text-white' 
                 : 'bg-red-500 hover:bg-red-600 text-white'
             } transition-colors duration-200`}
           >
