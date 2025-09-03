@@ -80,7 +80,7 @@ const StatsSection = () => {
   return (
     <section 
       ref={ref}
-      className="py-20 bg-gradient-to-br from-pastel-purple/40 via-white to-pastel-blue/40 relative overflow-hidden"
+      className="py-20 bg-[#ffff] relative overflow-hidden"
     >
       {/* Decorative background elements */}
       <div className="absolute top-10 left-10 opacity-20">

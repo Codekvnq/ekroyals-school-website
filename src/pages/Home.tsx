@@ -174,7 +174,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       title: "Fun Filled Learning",
       description:
         "Interactive lessons that make education exciting and memorable for every child.",
-      color: "bg-gradient-to-br from-purple-100 to-purple-200",
+      color: "bg-gradient-to-br from-purple-100 to-purple-100",
       textColor: "text-school-blue-600 ",
       image: "/images/hero/stud5.JPG",
     },
@@ -183,7 +183,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       title: "Secured Atmosphere",
       description:
         "24/7 CCTV supervision and safe environment for peace of mind.",
-      color: "bg-gradient-to-br from-purple-100 to-purple-200",
+      color: "bg-gradient-to-br from-purple-100 to-purple-100",
       textColor: "text-school-blue-600 ",
       image: "/images/hero/stud11.JPG",
     },
@@ -192,19 +192,20 @@ const handleSubmit = async (e: React.FormEvent) => {
       title: "Furnished Classrooms",
       description:
         "Modern, colorful classrooms equipped with the latest learning technology.",
-      color: "bg-gradient-to-br from-purple-100 to-purple-200",
+      color: "bg-gradient-to-br from-purple-100 to-purple-100",
       textColor: "text-school-blue-600 ",
       image: "/images/hero/ss13.JPG",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+   <div className="min-h-screen bg-[#ffff]">
+
       {/* Hero Section */}
       <HeroCarousel />
 
       {/* Our Aims and Ethos */}
-      <section className="py-20 bg-gradient-to-r from-school-blue-100 via-white to-school-yellow-100 relative overflow-hidden">
+      <section className="py-20 bg-[#ffff] relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-10 left-10 opacity-30">
           <FaStar className="text-school-yellow-400 text-4xl animate-pulse" />
@@ -256,7 +257,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       </section>
 
       {/* Our School Section */}
-      <section className="py-20 bg-gradient-to-l from-blue-100 via-white to-purple-100 relative">
+      <section className="py-20  bg-[#ffff] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -338,7 +339,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       </section>
 
       {/* Cross Disciplinary Curriculum Features */}
-      <section className="py-20 bg-gradient-to-r from-purple-100 via-white to-blue-100 relative overflow-hidden">
+      <section className="py-20 bg-[#ffff]  relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -430,7 +431,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <StatsSection />
 
       {/* Programs Section */}
-      <section className="py-20 bg-gradient-to-br from-white via-pink-100 to-purple-100 relative overflow-hidden">
+      <section className="py-20 bg-[#ffff]  relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
           <FaStar className="absolute top-20 left-20 text-6xl text-yellow-400 animate-pulse" />
@@ -523,7 +524,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <TestimonialsSection />
 
        {/* Gallery Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-100 via-white to-purple-100 relative overflow-hidden">
+      <section className="py-20 bg-[#fffff]  relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -682,7 +683,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 </AnimatePresence>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-br from-white via-purple-100 to-pink-100 relative overflow-hidden">
+      <section className="py-20 bg-[#fffcf5] relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-10 right-10 opacity-20">
           <FaRocket className="text-orange-400 text-6xl animate-float" />

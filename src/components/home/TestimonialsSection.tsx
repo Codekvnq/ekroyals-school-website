@@ -50,11 +50,11 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-white via-pastel-pink/30 to-pastel-purple/30 relative overflow-hidden">
+    <section className="py-20 bg-[#ffff] relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-10 left-10 opacity-20">
+      {/* <div className="absolute top-10 left-10 opacity-20">
         <FaHeart className="text-accent-pink text-5xl animate-pulse" />
-      </div>
+      </div> */}
       <div className="absolute bottom-10 right-10 opacity-20">
         <div className="w-16 h-16 border-4 border-accent-blueblack rounded-full border-dashed animate-spin" style={{ animationDuration: '6s' }}></div>
       </div>
