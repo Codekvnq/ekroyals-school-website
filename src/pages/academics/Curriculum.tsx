@@ -50,9 +50,9 @@ const Curriculum = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen pt-24 bg-[#ffff]">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-100 via-blue-100 to-pink-100 relative overflow-hidden">
+      <section className="py-20 bg-[#ffff] relative overflow-hidden">
         <div className="absolute top-10 left-10 opacity-30">
           <FaGraduationCap className="text-purple-400 text-4xl animate-pulse" />
         </div>
@@ -101,7 +101,7 @@ const Curriculum = () => {
       </section>
 
       {/* Programs Section */}
-      <section className="py-20 bg-gradient-to-r from-white via-pink-50 to-purple-50">
+      <section className="py-20 bg-[#ffff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -167,7 +167,7 @@ const Curriculum = () => {
       </section>
 
       {/* Subjects Section */}
-      <section className="py-20 bg-gradient-to-l from-blue-100 via-white to-purple-100">
+      <section className="py-20 bg-[#ffff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -207,7 +207,7 @@ const Curriculum = () => {
       </section>
 
       {/* Teaching Approach */}
-      <section className="py-20 bg-gradient-to-r from-purple-100 via-white to-pink-100">
+      <section className="py-20 bg-[#ffff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div

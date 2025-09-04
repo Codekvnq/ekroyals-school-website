@@ -63,7 +63,7 @@ const Footer = () => {
     <footer className="relative bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 text-white overflow-hidden">
       {/* Decorative cloud shape at top */}
       <div
-        className="absolute top-0 left-0 w-full h-20 bg-[#e6eafa]"
+        className="absolute top-0 left-0 w-full h-20 bg-[#ffff]"
         style={{
           clipPath: "ellipse(100% 100% at 50% 0%)",
         }}

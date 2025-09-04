@@ -135,7 +135,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen pt-24 bg-[#ffff]">
       {/* Message Status Modal */}
       {showMessageModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
@@ -205,7 +205,7 @@ const Contact = () => {
       )}
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-100 via-blue-100 to-pink-100 relative overflow-hidden">
+      <section className="py-20 bg-[#ffff] relative overflow-hidden">
         <div className="absolute top-10 left-10 opacity-30">
           <FaGraduationCap className="text-accent-grey text-4xl animate-pulse" />
         </div>
@@ -263,23 +263,23 @@ const Contact = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 bg-gradient-to-r from-white via-pink-50 to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
-              Get In Touch
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We're here to answer your questions and help you learn more about
-              our school community.
-            </p>
-          </motion.div>
+     <section className="py-20 bg-[#ffff]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
+        Get In Touch
+      </h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        We're here to answer your questions and help you learn more about
+        our school community.
+      </p>
+    </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <motion.div
@@ -363,7 +363,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form and Quick Links */}
-      <section className="py-20 bg-gradient-to-l from-blue-100 via-white to-purple-100">
+      <section className="py-20 bg-[#e6eafa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
