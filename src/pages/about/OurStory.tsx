@@ -42,7 +42,7 @@ const OurStory = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-100 via-blue-100 to-pink-100 relative overflow-hidden">
+      <section className="py-20 bg-[#ffff] relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-10 left-10 opacity-30">
           <FiStar className="text-yellow-400 text-4xl animate-pulse" />
@@ -84,7 +84,7 @@ const OurStory = () => {
       </section>
 
       {/* School Story */}
-      <section className="py-20 bg-gradient-to-r from-white via-blue-50 to-purple-50">
+      <section className="py-20 bg-[#ffff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,7 +133,7 @@ const OurStory = () => {
       </section>
 
       {/* Mission and Vision */}
-      <section className="py-20 bg-gradient-to-l from-pink-100 via-white to-blue-100">
+      <section className="py-20 bg-[#ffff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <motion.div
@@ -182,7 +182,7 @@ const OurStory = () => {
       </section>
 
       {/* Principal's Message */}
-      <section className="py-20 bg-gradient-to-r from-white via-purple-50 to-pink-50">
+      <section className="py-20 bg-[#ffff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             <motion.div
@@ -245,7 +245,7 @@ const OurStory = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-gradient-to-br from-purple-100 via-blue-100 to-pink-100 relative overflow-hidden">
+      <section className="py-20 bg-[#e6eafa] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

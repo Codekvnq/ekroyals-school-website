@@ -683,7 +683,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 </AnimatePresence>
 
       {/* Contact Section */}
-      <section className="py-20 bg-[#fffcf5] relative overflow-hidden">
+      <section className="py-20 bg-[#e6eafa] relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-10 right-10 opacity-20">
           <FaRocket className="text-orange-400 text-6xl animate-float" />
