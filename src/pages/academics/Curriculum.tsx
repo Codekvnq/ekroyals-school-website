@@ -38,7 +38,7 @@ const Curriculum = () => {
     },
     {
       icon: FiUsers,
-      title: 'Junior High School (Ages 12-14)',
+      title: 'Junior High School (Ages 12-14+)',
       description: 'Preparing students for senior secondary education with comprehensive academic programs and character development.',
       features: ['Advanced curriculum', 'Leadership training', 'Career guidance', 'Extracurricular activities'],
       color: 'from-purple-400 to-purple-300',

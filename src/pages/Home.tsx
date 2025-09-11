@@ -135,7 +135,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       color: "from-teal-400 to-teal-300",
       hoverColor: "hover:from-teal-500 hover:to-teal-400",
       bgColor: "bg-gradient-to-br from-teal-100 to-teal-200",
-      image: "/images/hero/stud9.JPG",
+      image: "/images/hero/stud99.JPG",
     },
     {
       icon: FiHeart,
@@ -155,7 +155,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       color: "from-blue-400 to-blue-300",
       hoverColor: "hover:from-blue-500 hover:to-blue-400",
       bgColor: "bg-gradient-to-br from-blue-100 to-blue-200",
-      image: "/images/hero/ss1.JPG",
+      image: "/images/hero/stud5.JPG",
     },
     {
       icon: FiAward,
@@ -165,7 +165,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       color: "from-orange-400 to-orange-300",
       hoverColor: "hover:from-orange-500 hover:to-orange-400",
       bgColor: "bg-gradient-to-br from-orange-100 to-orange-200",
-      image: "/images/hero/stud5.JPG",
+      image: "/images/hero/ss111.JPG",
     },
   ];
 
