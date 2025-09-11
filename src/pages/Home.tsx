@@ -164,7 +164,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     "/images/hero/stud3.JPG",
     "/images/hero/stud8.JPG",
     "/images/hero/stud13.JPG",
-    "/images/hero/stud9.JPG",
+    "/images/hero/ss15.JPG",
     "/images/hero/ss8.JPG",
   ];
 
@@ -366,7 +366,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             >
               <div className="relative">
                 <img
-                  src="/images/hero/stud7.JPG"
+                  src="/images/hero/ss43.JPG"
                   alt="Happy children learning"
                   className="w-full h-96 object-cover rounded-3xl shadow-2xl"
                 />

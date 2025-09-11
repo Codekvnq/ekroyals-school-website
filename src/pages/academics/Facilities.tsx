@@ -159,7 +159,7 @@ const Facilities = () => {
               className="relative"
             >
               <img
-                src="/images/hero/stud7.JPG"
+                src="/images/hero/ss43.JPG"
                 alt="Academic Facilities"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />

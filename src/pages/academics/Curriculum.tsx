@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiBook, FiUsers, FiAward, FiHeart, FiStar, FiTarget, FiCheckCircle } from 'react-icons/fi';
-import { FaGraduationCap, FaRocket, FaPalette, FaGamepad } from 'react-icons/fa';
+import { FiBook, FiUsers,FiCpu,FiGlobe, FiAward, FiHeart, FiStar, FiTarget, FiCheckCircle, FiPenTool } from 'react-icons/fi';
+import { FaGraduationCap,FaChalkboardTeacher, FaLanguage, FaRocket, FaPalette, FaGamepad, FaBaby, FaChild } from 'react-icons/fa';
 
 const Curriculum = () => {
   useEffect(() => {
@@ -10,13 +10,22 @@ const Curriculum = () => {
 
   const programs = [
     {
+      icon: FaBaby,
+      title: 'Montessori/Creche (1.5-2 years)',
+      description: 'Early childhood development program focusing on sensory experiences, motor skills, and foundational learning through play-based activities.',
+      features: ['Sensory play activities', 'Motor skills development', 'Early socialization', 'Language exposure', 'Music and movement'],
+      color: 'from-teal-400 to-teal-300',
+      bgColor: 'bg-gradient-to-br from-teal-100 to-teal-200',
+      image: '/images/hero/stud9.JPG'
+    },
+    {
       icon: FiHeart,
       title: 'Pre-school (Ages 3-5)',
       description: 'Nurturing young minds with play-based learning and early childhood development in a colorful, safe environment.',
       features: ['Play-based learning', 'Social skills development', 'Basic literacy and numeracy', 'Creative arts and crafts'],
       color: 'from-pink-400 to-pink-300',
       bgColor: 'bg-gradient-to-br from-pink-100 to-pink-200',
-      image: '/images/hero/stud9.JPG'
+      image: '/images/hero/stud60.JPG'
     },
     {
       icon: FiBook,
@@ -45,8 +54,11 @@ const Curriculum = () => {
     { name: 'Social Studies', icon: FiUsers, color: 'text-orange-600' },
     { name: 'Creative Arts', icon: FaPalette, color: 'text-pink-600' },
     { name: 'Physical Education', icon: FaGamepad, color: 'text-red-600' },
-    { name: 'ICT', icon: FiStar, color: 'text-indigo-600' },
-    { name: 'Religious & Moral Education', icon: FiHeart, color: 'text-teal-600' }
+    { name: 'ICT', icon: FiCpu, color: 'text-indigo-600' },
+    { name: 'Religious & Moral Education', icon: FiGlobe, color: 'text-teal-600' },
+    { name: 'French', icon: FaLanguage, color: 'text-blue-500' },
+    { name: 'Phonics', icon: FiAward, color: 'text-purple-500' },
+    { name: 'Abacus', icon: FaChalkboardTeacher, color: 'text-orange-500' }
   ];
 
   return (
@@ -118,7 +130,7 @@ const Curriculum = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-4 gap-8">
             {programs.map((program, index) => (
               <motion.div
                 key={program.title}

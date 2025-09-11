@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiCalendar, FiUsers, FiBookOpen, FiStar, FiCheckCircle, FiClock } from 'react-icons/fi';
+import { FiCalendar, FiUsers, FiBookOpen, FiHeart, FiStar, FiCheckCircle, FiClock } from 'react-icons/fi';
 import { FaGraduationCap, FaHeart, FaRocket, FaBaby, FaChild, FaUserGraduate } from 'react-icons/fa';
 
 const Admissions = () => {
@@ -9,20 +9,35 @@ const Admissions = () => {
   }, []);
 
   const entryLevels = [
+     {
+    icon: FaBaby,
+    title: 'Montessori / Creche',
+    ageRange: '1 year 6 months – 2 years',
+    description: 'Early childhood program focusing on sensory development, motor skills, and a safe, nurturing environment for our youngest learners.',
+    features: [
+      'Sensory play activities',
+      'Motor skills development',
+      'Early social interaction',
+      'Introduction to language and music'
+    ],
+    color: 'from-teal-400 to-teal-300',
+    bgColor: 'bg-gradient-to-br from-teal-100 to-teal-200',
+    image: '/images/hero/stud9.JPG'
+  },
     {
-      icon: FaBaby,
+      icon: FiHeart,
       title: 'Kindergarten',
-      ageRange: 'Ages 3-5',
+      ageRange: 'Ages 3-5 years',
       description: 'Early childhood development with play-based learning in a nurturing environment.',
       features: ['Play-based learning', 'Social skills development', 'Basic literacy', 'Creative activities'],
       color: 'from-blue-400 to-blue-300',
       bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
-      image: '/images/hero/stud9.JPG'
+      image: '/images/hero/stud60.JPG'
     },
     {
       icon: FaChild,
       title: 'Primary',
-      ageRange: 'Ages 6-11',
+      ageRange: 'Ages 6-11 years',
       description: 'Strong foundation in core subjects with interactive and engaging teaching methods.',
       features: ['Core subjects mastery', 'Interactive learning', 'Character building', 'Skill development'],
       color: 'from-blue-400 to-blue-300',
@@ -32,7 +47,7 @@ const Admissions = () => {
     {
       icon: FaUserGraduate,
       title: 'Junior High',
-      ageRange: 'Ages 12-14',
+      ageRange: 'Ages 12-14+ years',
       description: 'Comprehensive secondary education preparing students for senior high school.',
       features: ['Advanced curriculum', 'Leadership training', 'Career guidance', 'Exam preparation'],
       color: 'from-blue-400 to-blue-300',
@@ -149,7 +164,7 @@ const Admissions = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {entryLevels.map((level, index) => (
               <motion.div
                 key={level.title}

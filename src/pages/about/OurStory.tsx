@@ -199,7 +199,7 @@ const OurStory = () => {
                   className="w-48 h-48 mx-auto rounded-full object-cover mb-6 ring-4 ring-purple-300 shadow-2xl"
                 />
                 <h3 className="text-xl font-semibold text-school-blue-600 font-playful">
-                  Mrs. Elizabeth Kesewaah
+                  Mrs. Elizabeth Kese
                 </h3>
                 <p className="text-gray-600">Principal</p>
               </div>
