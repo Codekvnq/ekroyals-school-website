@@ -22,7 +22,7 @@ const HeroCarousel = () => {
       bgGradient: 'from-[#B6BBC4] via-[#31304D] to-[#161A30]'
     },
     {
-      image: '/images/hero/stud7.JPG',
+      image: '/images/hero/ss43.JPG',
       title: 'Academic Excellence',
       subtitle: 'Preparing Young Minds for Tomorrow',
       description: 'Our innovative curriculum combines fun learning with academic rigor to ensure every child thrives, grows, and reaches for the stars!',

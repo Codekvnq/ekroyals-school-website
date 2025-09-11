@@ -128,6 +128,16 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   const programs = [
     {
+      icon: FiUsers,
+      title: "Creche",
+      description:
+        "A nurturing start for ages 1 year 6 months – 2 years, focusing on sensory development, motor skills, and early social interaction.",
+      color: "from-teal-400 to-teal-300",
+      hoverColor: "hover:from-teal-500 hover:to-teal-400",
+      bgColor: "bg-gradient-to-br from-teal-100 to-teal-200",
+      image: "/images/hero/stud9.JPG",
+    },
+    {
       icon: FiHeart,
       title: "Pre-school",
       description:
@@ -135,7 +145,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       color: "from-pink-400 to-pink-300",
       hoverColor: "hover:from-pink-500 hover:to-pink-400",
       bgColor: "bg-gradient-to-br from-pink-100 to-pink-200",
-      image: "/images/hero/stud9.JPG",
+      image: "/images/hero/stud61.JPG",
     },
     {
       icon: FiBook,
@@ -463,7 +473,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
           {/* Updated grid container with proper centering */}
           <div className="flex justify-center">
-            <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
               {programs.map((program, index) => (
                 <motion.div
                   key={program.title}
