@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
   name: 'Grace Osei',
   role: 'Guardian of Former Student',
   rating: 5,
-  text: 'As a guardian, I am truly grateful for the role E.K Royals played in shaping my ward’s future. The strong academic foundation and values instilled here prepared them excellently for university and life beyond. '
+  text: 'As a guardian, I am truly grateful for the role E.K Royals played in shaping my ward’s future. The strong academic foundation and values instilled here prepared them excellently for senior high school  and life beyond. '
 },
     {
       name: 'Emmanuel Boateng',

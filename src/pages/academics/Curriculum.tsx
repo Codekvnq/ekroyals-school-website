@@ -16,7 +16,7 @@ const Curriculum = () => {
       features: ['Sensory play activities', 'Motor skills development', 'Early socialization', 'Language exposure', 'Music and movement'],
       color: 'from-teal-400 to-teal-300',
       bgColor: 'bg-gradient-to-br from-teal-100 to-teal-200',
-      image: '/images/hero/stud9.JPG'
+      image: '/images/hero/ss55.jpg'
     },
     {
       icon: FiHeart,
@@ -25,7 +25,7 @@ const Curriculum = () => {
       features: ['Play-based learning', 'Social skills development', 'Basic literacy and numeracy', 'Creative arts and crafts'],
       color: 'from-pink-400 to-pink-300',
       bgColor: 'bg-gradient-to-br from-pink-100 to-pink-200',
-      image: '/images/hero/stud60.JPG'
+      image: '/images/hero/stud9.JPG'
     },
     {
       icon: FiBook,
@@ -112,71 +112,77 @@ const Curriculum = () => {
         </div>
       </section>
 
-      {/* Programs Section */}
-      <section className="py-20 bg-[#ffff]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
-              Our Academic Programs
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Comprehensive educational programs designed to nurture growth at every stage of learning.
-            </p>
-          </motion.div>
+    {/* Programs Section */}
+<section className="py-20 bg-[#ffff]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-school-blue-600 mb-4 font-playful">
+        Our Academic Programs
+      </h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        Comprehensive educational programs designed to nurture growth at every stage of learning.
+      </p>
+    </motion.div>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-4 gap-8">
-            {programs.map((program, index) => (
-              <motion.div
-                key={program.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`${program.bgColor} rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-4 border-white relative overflow-hidden h-full`}
-              >
-                <FiStar className="absolute top-2 right-2 text-yellow-400 text-lg animate-pulse" />
-                
-                {/* Program Image - Fixed sizing */}
-                <div className="mb-6">
-                  <div className="aspect-w-16 aspect-h-9 rounded-2xl shadow-lg overflow-hidden">
-                    <img
-                      src={program.image}
-                      alt={program.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${program.color} flex items-center justify-center shadow-lg mb-4 mx-auto`}>
-                  <program.icon className="h-8 w-8 text-white" />
-                </div>
-                
-                <h3 className="text-2xl font-bold text-school-blue-600 mb-4 font-playful text-center">
-                  {program.title}
-                </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed text-center">
-                  {program.description}
-                </p>
-                
-                <div className="space-y-2">
-                  {program.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center text-gray-700">
-                      <FiCheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                      <span className="text-sm">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
+    {/* Responsive Grid - fixed */}
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {programs.map((program, index) => (
+        <motion.div
+          key={program.title}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          className={`${program.bgColor} rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-4 border-white relative overflow-hidden h-full`}
+        >
+          <FiStar className="absolute top-2 right-2 text-yellow-400 text-lg animate-pulse" />
+
+          {/* Program Image */}
+          <div className="mb-6">
+            <div className="aspect-w-16 aspect-h-9 rounded-2xl shadow-lg overflow-hidden">
+              <img
+                src={program.image}
+                alt={program.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Program Icon */}
+          <div
+            className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${program.color} flex items-center justify-center shadow-lg mb-4 mx-auto`}
+          >
+            <program.icon className="h-8 w-8 text-white" />
+          </div>
+
+         <h3 className="text-xl font-bold text-school-blue-600 mb-4 font-playful text-center min-h-[60px] flex items-center justify-center">
+  {program.title}
+</h3>
+
+          <p className="text-gray-700 mb-6 leading-relaxed text-center">
+            {program.description}
+          </p>
+
+          <div className="space-y-2">
+            {program.features.map((feature, idx) => (
+              <div key={idx} className="flex items-center text-gray-700">
+                <FiCheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                <span className="text-sm">{feature}</span>
+              </div>
             ))}
           </div>
-        </div>
-      </section>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Subjects Section */}
       <section className="py-20 bg-[#ffff]">

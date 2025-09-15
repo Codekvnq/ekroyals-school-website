@@ -22,7 +22,7 @@ const Admissions = () => {
     ],
     color: 'from-teal-400 to-teal-300',
     bgColor: 'bg-gradient-to-br from-teal-100 to-teal-200',
-    image: '/images/hero/stud9.JPG'
+    image: '/images/hero/ss55.jpg'
   },
     {
       icon: FiHeart,
@@ -32,7 +32,7 @@ const Admissions = () => {
       features: ['Play-based learning', 'Social skills development', 'Basic literacy', 'Creative activities'],
       color: 'from-blue-400 to-blue-300',
       bgColor: 'bg-gradient-to-br from-blue-100 to-blue-200',
-      image: '/images/hero/stud61.JPG'
+      image: '/images/hero/stud9.JPG'
     },
     {
       icon: FaChild,
