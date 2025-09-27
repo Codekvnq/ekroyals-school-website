@@ -29,12 +29,12 @@ const GalleryPage: React.FC = () => {
   const galleryImages: GalleryImage[] = [
     {
       src: "/images/hero/stud12.JPG",
-      category: "campus",
-      title: "School Campus"
+      category: "activities",
+      title: "School Activities"
     },
     {
       src: "/images/hero/stud3.JPG",
-      category: "students",
+      category: "activities",
       title: "Happy Students"
     },
     {
@@ -59,9 +59,29 @@ const GalleryPage: React.FC = () => {
     },
     // Additional images
     {
-      src: "/images/hero/stud5.JPG",
+      src: "/images/hero/ss43.JPG",
       category: "students",
       title: "Group Learning"
+    },
+    {
+      src: "/images/hero/ss24.JPG",
+      category: "campus",
+      title: "Teacher-Student Collaboration"
+    },
+    {
+      src: "/images/hero/ss30.JPG",
+      category: "campus",
+      title: "Lovely Students"
+    },
+    {
+      src: "/images/hero/ss9.JPG",
+      category: "students",
+      title: "Playtime Fun"
+    },
+    {
+      src: "/images/hero/ss6.JPG",
+      category: "campus",
+      title: "Environment"
     },
     {
       src: "/images/hero/stud10.JPG",
@@ -69,9 +89,9 @@ const GalleryPage: React.FC = () => {
       title: "School Building"
     },
     {
-      src: "/images/hero/stud7.JPG",
-      category: "activities",
-      title: "Creative Arts"
+      src: "/images/hero/ss41.JPG",
+      category: "classrooms",
+      title: "Interactive Learning"
     },
     {
       src: "/images/hero/stud99.JPG",
@@ -79,14 +99,14 @@ const GalleryPage: React.FC = () => {
       title: "Preschool Area"
     },
     {
-      src: "/images/hero/ss11.JPG",
+      src: "/images/hero/ss14.JPG",
       category: "students",
-      title: "Student Projects"
+      title: "Happy Students"
     },
     {
-      src: "/images/hero/ss13.JPG",
+      src: "/images/hero/ss16.JPG",
       category: "activities",
-      title: "Sports Day"
+      title: "Students Engagement"
     },
     {
       src: "/images/hero/ss43.JPG",
@@ -94,19 +114,39 @@ const GalleryPage: React.FC = () => {
       title: "Playground"
     },
     {
-      src: "/images/hero/ss55.JPG",
+      src: "/images/hero/ss55.jpg",
       category: "classrooms",
-      title: "Science Lab"
+      title: "Kindergarten"
+    },
+     {
+      src: "/images/hero/stud11.JPG",
+      category: "campus",
+      title: "School bus"
+    },
+     {
+      src: "/images/hero/ss38.JPG",
+      category: "campus",
+      title: "Nice Buses"
+    },
+     {
+      src: "/images/hero/ss39.JPG",
+      category: "students",
+      title: "Environment"
     },
     {
       src: "/images/hero/ss111.JPG",
       category: "students",
-      title: "Graduation"
+      title: "Students"
+    },
+     {
+      src: "/images/hero/ss37.JPG",
+      category: "students",
+      title: "Students"
     },
     {
-      src: "/images/hero/stud65.jpg",
+      src: "/images/hero/ss34.JPG",
       category: "classrooms",
-      title: "Computer Lab"
+      title: "Classroom"
     }
   ];
 

@@ -363,7 +363,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form and Quick Links */}
-      <section className="py-20 bg-[#e6eafa]">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}

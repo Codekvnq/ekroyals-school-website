@@ -42,7 +42,7 @@ const OurStory = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 relative overflow-hidden">
+      <section className="py-20 bg-[#ffff] relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-10 left-10 opacity-30">
           <FiStar className="text-yellow-400 text-4xl animate-pulse" />
