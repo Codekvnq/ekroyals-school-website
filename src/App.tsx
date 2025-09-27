@@ -8,6 +8,7 @@ import OurStory from './pages/about/OurStory';
 import Careers from './pages/about/Careers';
 import Curriculum from './pages/academics/Curriculum';
 import Facilities from './pages/academics/Facilities';
+import GalleryPage from './components/gallery/GalleryPage';
 import CoCurriculum from './pages/academics/CoCurriculum';
 import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
@@ -27,6 +28,7 @@ function App() {
               <Route path="/academics/facilities" element={<Facilities />} />
               <Route path="/academics/co-curriculum" element={<CoCurriculum />} />
               <Route path="/admissions" element={<Admissions />} />
+              <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

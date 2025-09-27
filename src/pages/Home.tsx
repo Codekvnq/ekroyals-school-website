@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef   } from "react";
+import { FiChevronRight } from "react-icons/fi";
 import emailjs from 'emailjs-com';
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   FiBook,
   FiUsers,
@@ -50,6 +51,8 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showMessageModal, setShowMessageModal] = useState(false);
@@ -204,7 +207,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         "Modern, colorful classrooms equipped with the latest learning technology.",
       color: "bg-gradient-to-br from-purple-100 to-purple-100",
       textColor: "text-school-blue-600 ",
-      image: "/images/hero/ss13.JPG",
+      image: "/images/hero/stud65.jpg",
     },
   ];
 
@@ -215,7 +218,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <HeroCarousel />
 
       {/* Our Aims and Ethos */}
-      <section className="py-20 bg-[#ffff] relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50 relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-10 left-10 opacity-30">
           <FaStar className="text-school-yellow-400 text-4xl animate-pulse" />
@@ -533,62 +536,82 @@ const handleSubmit = async (e: React.FormEvent) => {
       {/* Testimonials Section */}
       <TestimonialsSection />
 
-       {/* Gallery Section */}
-      <section className="py-20 bg-[#fffff]  relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-4 font-playful">
-              Campus Gallery
-              <FaPalette className="inline-block ml-3 text-school-blue-90 animate-bounce" />
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Take a colorful visual tour of our modern facilities and vibrant
-              learning environment!
-            </p>
-          </motion.div>
+{/* Gallery Section */}
+<section id="gallery-section" className="py-20 bg-[#fffff] relative overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-4xl md:text-5xl font-bold text-school-blue-600 mb-4 font-playful">
+        Campus Gallery
+        <FaPalette className="inline-block ml-3 text-school-blue-90 animate-bounce" />
+      </h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Take a colorful visual tour of our modern facilities and vibrant
+        learning environment!
+      </p>
+    </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            {galleryImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`relative overflow-hidden rounded-2xl md:rounded-3xl group cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 ${
-                  index === 0 ? "sm:col-span-2 md:col-span-2 md:row-span-2" : ""
-                }`}
-                onClick={() => setSelectedImage(image)}
-              >
-                <div className="w-full h-full">
-                  <img
-                    src={image}
-                    alt={`Campus ${index + 1}`}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    style={{
-                      height: index === 0 ? "400px" : "200px",
-                      minHeight: index === 0 ? "400px" : "200px",
-                    }}
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 md:pb-6">
-                  <span className="text-white font-bold text-sm md:text-lg bg-white/20 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full">
-                    View Image
-                  </span>
-                </div>
-                {/* Decorative corner star */}
-                <FaStar className="absolute top-2 right-2 text-yellow-400 text-sm md:text-xl opacity-80" />
-              </motion.div>
-            ))}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-12">
+      {galleryImages.map((image, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          className={`relative overflow-hidden rounded-2xl md:rounded-3xl group cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 ${
+            index === 0 ? "sm:col-span-2 md:col-span-2 md:row-span-2" : ""
+          }`}
+          onClick={() => setSelectedImage(image)}
+        >
+          <div className="w-full h-full">
+            <img
+              src={image}
+              alt={`Campus ${index + 1}`}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              style={{
+                height: index === 0 ? "400px" : "200px",
+                minHeight: index === 0 ? "400px" : "200px",
+              }}
+            />
           </div>
-        </div>
-      </section>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 md:pb-6">
+            <span className="text-white font-bold text-sm md:text-lg bg-white/20 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full">
+              View Image
+            </span>
+          </div>
+          {/* Decorative corner star */}
+          <FaStar className="absolute top-2 right-2 text-yellow-400 text-sm md:text-xl opacity-80" />
+        </motion.div>
+      ))}
+    </div>
+
+    {/* See More Button */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      className="text-center"
+    >
+      <Link
+        to="/gallery"
+         state={{ fromHomeGallery: true }} 
+        className="inline-flex items-center px-8 py-4  bg-gradient-to-r from-[#2c3e50] to-[#3a506b]    text-white font-nunito  font-bold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105  hover:from-[#3a506b] hover:to-[#4b5563]  text-lg"
+      >
+        <FaPalette className="mr-3 h-5 w-5" />
+        See More Gallery Images
+        <FiChevronRight className="ml-2 h-5 w-5" />
+      </Link>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Message Status Modal */}
 <AnimatePresence>
