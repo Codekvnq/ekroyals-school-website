@@ -58,7 +58,7 @@ const Header = () => {
   <div className="relative">
     <div className="group-hover:scale-110 transition-transform duration-300">
       <img 
-        src='/images/hero/ROYALS SCHOOL COMPLEX.png'
+        src='/images/hero/logo.png'
         alt="E.K Royals School Complex Logo" 
         className="h-12 w-auto" // Adjust height as needed
       />
